@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Four Revenue Operations Associate candidates selected for Osmind by Sagan.">
+  <title>Revenue Operations Associate Candidates | Osmind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #f5f2ed;
+      --paper: #fffdfa;
+      --glacier: #093a3e;
+      --deep: #06282b;
+      --yellow: #f5b800;
+      --blue: #2197ff;
+      --ink: #163b3d;
+      --muted: #706f69;
+      --line: rgba(9, 58, 62, .16);
+      --soft: rgba(9, 58, 62, .055);
+      --head: "Plus Jakarta Sans", sans-serif;
+      --body: "Space Grotesk", sans-serif;
+      --mono: "Fragment Mono", monospace;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--cream); font-family: var(--body); line-height: 1.55; }
+    img, video, iframe { display: block; max-width: 100%; }
+    button { font: inherit; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow { margin: 0 0 14px; color: var(--yellow); font: 600 12px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+    .section-title { margin: 0; color: var(--glacier); font: 700 clamp(28px, 4vw, 42px)/1.12 var(--head); letter-spacing: -.035em; }
+    .section-copy { max-width: 710px; margin: 14px 0 0; color: var(--muted); font-size: 17px; }
+
+    header { background: var(--deep); color: #fff; border-top: 6px solid var(--yellow); }
+    .brandbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,.14); }
+    .brands { display: flex; align-items: center; gap: 18px; }
+    .sagan { color: #fff; font: 800 24px/1 var(--head); letter-spacing: -.04em; }
+    .sagan-dot { display: inline-block; width: 14px; height: 14px; margin-right: 8px; border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 0 4px var(--blue); }
+    .divider { width: 1px; height: 30px; background: rgba(255,255,255,.25); }
+    .client-logo { width: 120px; height: 34px; object-fit: contain; filter: brightness(0) invert(1); }
+    .date { color: rgba(255,255,255,.68); font: 12px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
+    .hero { padding: 76px 0 82px; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, .55fr); gap: 72px; align-items: end; }
+    h1 { max-width: 790px; margin: 0; color: #fff; font: 700 clamp(42px, 6.5vw, 76px)/1 var(--head); letter-spacing: -.055em; }
+    .hero-copy { max-width: 720px; margin: 24px 0 0; color: rgba(255,255,255,.72); font-size: 19px; }
+    .hero-stat { padding: 26px; border: 1px solid rgba(255,255,255,.18); border-radius: 22px; background: rgba(255,255,255,.04); }
+    .hero-stat strong { display: block; color: var(--yellow); font: 700 56px/1 var(--mono); }
+    .hero-stat span { display: block; margin-top: 10px; color: rgba(255,255,255,.82); font-size: 15px; }
+
+    main section { padding: 84px 0; }
+    .brief { background: var(--paper); border-bottom: 1px solid var(--line); }
+    .brief-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: start; }
+    .criteria { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .criterion { min-height: 132px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--cream); }
+    .criterion b { display: block; margin-bottom: 8px; color: var(--glacier); font: 700 16px/1.25 var(--head); }
+    .criterion p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .candidates-intro { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 34px; }
+    .candidate-list { display: grid; gap: 28px; }
+    .candidate-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--paper); }
+    .candidate-head { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 30px 34px; color: #fff; background: var(--glacier); }
+    .identity { display: flex; align-items: center; gap: 18px; }
+    .avatar { display: grid; width: 58px; height: 58px; flex: 0 0 58px; place-items: center; border-radius: 50%; color: var(--glacier); background: var(--yellow); font: 800 17px/1 var(--head); }
+    .candidate-name { margin: 0; color: #fff; font: 700 25px/1.1 var(--head); letter-spacing: -.025em; }
+    .candidate-meta { margin: 7px 0 0; color: rgba(255,255,255,.72); font-size: 14px; }
+    .salary { text-align: right; }
+    .salary strong { display: block; color: var(--yellow); font: 700 23px/1.1 var(--mono); }
+    .salary span { color: rgba(255,255,255,.65); font: 11px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
+    .candidate-body { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(300px, .92fr); }
+    .candidate-story { padding: 34px; border-right: 1px solid var(--line); }
+    .intro { margin: 0; color: var(--glacier); font-size: 18px; line-height: 1.65; }
+    .evidence-label { margin: 30px 0 12px; color: var(--muted); font: 600 11px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .09em; }
+    .evidence { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .evidence li { position: relative; padding-left: 24px; color: #465b5b; font-size: 15px; }
+    .evidence li::before { content: ""; position: absolute; left: 0; top: .58em; width: 9px; height: 9px; border-radius: 50%; background: var(--yellow); }
+    .candidate-media { padding: 26px; background: var(--soft); }
+    .video-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; color: var(--glacier); font: 700 13px/1.2 var(--head); }
+    .verified { color: #327060; font: 11px/1.2 var(--mono); text-transform: uppercase; }
+    .video-shell { overflow: hidden; aspect-ratio: 16/9; border: 1px solid var(--line); border-radius: 16px; background: #000; }
+    .video-shell video, .video-shell iframe { width: 100%; height: 100%; border: 0; object-fit: contain; background: #000; }
+    .availability { margin: 14px 0 0; color: var(--muted); font-size: 13px; }
+    details { border-top: 1px solid var(--line); background: #fff; }
+    summary { display: flex; align-items: center; justify-content: space-between; padding: 19px 34px; color: var(--glacier); cursor: pointer; list-style: none; font: 700 14px/1.2 var(--head); }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 50%; text-align: center; font: 500 20px/26px var(--body); }
+    details[open] summary::after { content: "−"; }
+    .resume { padding: 4px 34px 32px; }
+    .resume-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 38px; }
+    .resume h4 { margin: 22px 0 10px; color: var(--glacier); font: 700 14px/1.2 var(--head); text-transform: uppercase; letter-spacing: .04em; }
+    .job { padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .job:last-child { border-bottom: 0; }
+    .job b { display: block; color: var(--glacier); }
+    .job span { color: var(--muted); font-size: 13px; }
+    .job ul, .resume-side ul { margin: 8px 0 0; padding-left: 18px; color: #4c6060; font-size: 14px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 0; padding: 0; list-style: none; }
+    .tag-list li { padding: 7px 10px; border-radius: 999px; color: var(--glacier); background: var(--soft); font: 500 12px/1.2 var(--mono); }
+    .private-note { margin: 18px 0 0; color: var(--muted); font-size: 12px; }
+
+    .comparison { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .table-wrap { margin-top: 34px; overflow-x: auto; border: 1px solid var(--line); border-radius: 20px; }
+    table { width: 100%; min-width: 900px; border-collapse: collapse; background: #fff; }
+    th { padding: 17px 18px; color: #fff; background: var(--glacier); text-align: left; font: 600 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .07em; }
+    td { padding: 18px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }
+    tr:last-child td { border-bottom: 0; }
+    td:first-child { color: var(--glacier); font-weight: 700; }
+
+    .advisor-card { display: flex; align-items: center; gap: 28px; max-width: 760px; margin: 32px auto 0; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
+    .advisor-card img { width: 92px; height: 92px; flex: 0 0 92px; border: 4px solid var(--yellow); border-radius: 50%; object-fit: cover; }
+    .advisor-card h3 { margin: 2px 0 5px; color: var(--glacier); font: 700 23px/1.2 var(--head); }
+    .advisor-card p { margin: 0; color: var(--muted); }
+    footer { padding: 30px 20px; color: rgba(255,255,255,.62); background: var(--deep); text-align: center; font-size: 12px; }
+
+    @media (max-width: 860px) {
+      .hero-grid, .brief-grid { grid-template-columns: 1fr; gap: 38px; }
+      .hero-stat { max-width: 320px; }
+      .candidate-body { grid-template-columns: 1fr; }
+      .candidate-story { border-right: 0; border-bottom: 1px solid var(--line); }
+      .resume-grid { grid-template-columns: 1fr; gap: 12px; }
+    }
+
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 24px, 1160px); }
+      .brandbar { align-items: flex-start; }
+      .brands { gap: 11px; }
+      .sagan { font-size: 20px; }
+      .client-logo { width: 92px; }
+      .date { display: none; }
+      .hero { padding: 54px 0 58px; }
+      .hero-copy { font-size: 17px; }
+      main section { padding: 62px 0; }
+      .criteria { grid-template-columns: 1fr; }
+      .candidates-intro { display: block; }
+      .candidate-head { grid-template-columns: 1fr; padding: 24px; }
+      .salary { text-align: left; padding-left: 76px; }
+      .candidate-story, .candidate-media { padding: 24px; }
+      summary { padding: 18px 24px; }
+      .resume { padding: 2px 24px 26px; }
+      .advisor-card { align-items: flex-start; padding: 24px; }
+      .advisor-card img { width: 72px; height: 72px; flex-basis: 72px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brandbar">
+      <div class="brands">
+        <div class="sagan"><span class="sagan-dot"></span>Sagan</div>
+        <div class="divider" aria-hidden="true"></div>
+        <img class="client-logo" src="osmind-logo.svg" alt="Osmind">
+      </div>
+      <div class="date">Candidate shortlist · September 2026</div>
+    </div>
+    <div class="wrap hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Revenue Operations Associate</p>
+          <h1>Four operators who can make revenue data useful.</h1>
+          <p class="hero-copy">Osmind needs a builder who can connect systems, keep the data clean, and help four different go-to-market motions run as one. These candidates have done the work. All four also have a verified intro video.</p>
+        </div>
+        <div class="hero-stat">
+          <strong>4</strong>
+          <span>video-confirmed candidates with direct CRM, automation, and reporting evidence</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="brief">
+      <div class="wrap brief-grid">
+        <div>
+          <p class="eyebrow" style="color:var(--glacier)">The assignment</p>
+          <h2 class="section-title">Build the operating layer behind growth.</h2>
+          <p class="section-copy">This is not a CRM cleanup role. The associate will support the full customer journey: first touch, closed-won, onboarding, expansion, and retention. The job needs technical execution and commercial judgment.</p>
+        </div>
+        <div class="criteria">
+          <article class="criterion"><b>Hands-on systems work</b><p>Build HubSpot workflows, properties, pipelines, lists, dashboards, and integrations.</p></article>
+          <article class="criterion"><b>Reliable revenue data</b><p>Improve reporting, attribution, reconciliation, forecasting, and data hygiene.</p></article>
+          <article class="criterion"><b>Process before automation</b><p>Document the operating rule first. Then automate it without adding hidden failure points.</p></article>
+          <article class="criterion"><b>Cross-functional judgment</b><p>Work across Sales, Marketing, Customer Success, Finance, and leadership.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="candidates-intro">
+          <div>
+            <p class="eyebrow" style="color:var(--glacier)">Selected candidates</p>
+            <h2 class="section-title">The shortlist</h2>
+          </div>
+          <p class="section-copy">The evidence below comes from each candidate’s résumé and application materials. Current availability still needs confirmation.</p>
+        </div>
+
+        <div class="candidate-list">
+          <article class="candidate-card">
+            <div class="candidate-head">
+              <div class="identity"><div class="avatar">BD</div><div><h3 class="candidate-name">Bonge Dlamini</h3><p class="candidate-meta">South Africa · HubSpot Engineer and RevOps Specialist · 4+ years</p></div></div>
+              <div class="salary"><strong>$3,800</strong><span>USD / month</span></div>
+            </div>
+            <div class="candidate-body">
+              <div class="candidate-story">
+                <p class="intro">Bonge is the most complete systems builder in this group. Bonge has owned HubSpot across Sales, Marketing, Operations, invoicing, recurring revenue, CPQ, and executive reporting. The experience is technical, but it stays tied to real commercial workflows. That is exactly what this role needs.</p>
+                <p class="evidence-label">Why this profile stands out</p>
+                <ul class="evidence">
+                  <li>Built custom HubSpot objects for assignments, properties, invoices, and recurring revenue.</li>
+                  <li>Created deal automation, recurring-invoice workflows, reminders, funnel dashboards, and revenue reporting.</li>
+                  <li>Reconciled HubSpot data with Google Sheets and payment processors.</li>
+                  <li>Worked with Salesforce, Gong, DocuSign, Stripe, DealHub, Zapier, APIs, SQL, and Power BI.</li>
+                </ul>
+              </div>
+              <div class="candidate-media">
+                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
+                <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/b2695e5f-8b09-4765-8d44-127630f76ba0">Your browser cannot play this video.</video></div>
+                <p class="availability">Availability: to confirm before interview.</p>
+              </div>
+            </div>
+            <details>
+              <summary>View résumé</summary>
+              <div class="resume"><div class="resume-grid">
+                <div>
+                  <h4>Recent experience</h4>
+                  <div class="job"><b>HubSpot Specialist · RevOps Hub</b><span>January 2026 – July 2026 · UK, remote</span><ul><li>Owned CRM strategy, optimization, data integrity, adoption, reporting, and CPQ support for an international B2B client.</li></ul></div>
+                  <div class="job"><b>HubSpot Engineer · HubSolute CRM</b><span>March 2023 – November 2025 · US, remote</span><ul><li>Built custom objects, advanced workflows, integrations, revenue dashboards, permissions, and process documentation.</li></ul></div>
+                  <div class="job"><b>HubSpot RevOps Specialist / CRM Sales Operations Analyst · SmartSetter</b><span>March 2022 – August 2023 · US, remote</span><ul><li>Owned administration, lead scoring, distribution, lifecycle reporting, attribution, data hygiene, and recurring reporting.</li></ul></div>
+                </div>
+                <div class="resume-side">
+                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Salesforce</li><li>Gong</li><li>DocuSign</li><li>Stripe</li><li>DealHub</li><li>Zapier</li><li>Make</li><li>SQL</li><li>Power BI</li></ul>
+                  <h4>Credentials</h4><ul><li>Bachelor of Information Technology in Business Systems</li><li>HubSpot Revenue Operations</li><li>HubSpot Sales Hub Software</li><li>HubSpot Data Integrations</li><li>AWS Cloud Practitioner</li></ul>
+                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
+                </div>
+              </div></div>
+            </details>
+          </article>
+
+          <article class="candidate-card">
+            <div class="candidate-head">
+              <div class="identity"><div class="avatar">DR</div><div><h3 class="candidate-name">Dwijesh Ramnath</h3><p class="candidate-meta">South Africa · Revenue and Marketing Operations · 4+ years</p></div></div>
+              <div class="salary"><strong>$2,500</strong><span>USD / month</span></div>
+            </div>
+            <div class="candidate-body">
+              <div class="candidate-story">
+                <p class="intro">Dwijesh brings the strongest marketing-to-revenue operating experience. He has connected CRM workflows, lead capture, lifecycle automation, campaign attribution, dashboards, and client reporting. He also knows how to document the work and teach teams to use it, which matters when one system supports several revenue motions.</p>
+                <p class="evidence-label">Why this profile stands out</p>
+                <ul class="evidence">
+                  <li>Led Revenue Operations alignment across marketing automation, CRM workflows, and client growth programs.</li>
+                  <li>Built lead-to-booking, revenue attribution, pipeline, ROI, and customer-lifecycle systems.</li>
+                  <li>Created SOPs and trained teams and clients on CRM use, analytics, and reporting.</li>
+                  <li>Uses HubSpot, GoHighLevel, Zoho, SQL, Looker Studio, Power BI, Tableau, APIs, and Apps Script.</li>
+                </ul>
+              </div>
+              <div class="candidate-media">
+                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
+                <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/b30b51c5-7501-45f5-be82-e230c6425254">Your browser cannot play this video.</video></div>
+                <p class="availability">Availability: to confirm before interview.</p>
+              </div>
+            </div>
+            <details>
+              <summary>View résumé</summary>
+              <div class="resume"><div class="resume-grid">
+                <div>
+                  <h4>Recent experience</h4>
+                  <div class="job"><b>Head of DFY Marketing Operations / Full Stack Marketing Technology Lead · Forever Booked</b><span>December 2024 – March 2026 · US, remote</span><ul><li>Managed CRM infrastructure and automation across lead capture, nurture, booking, revenue attribution, reporting, and client growth.</li></ul></div>
+                  <div class="job"><b>Full Stack Marketing, Clients and Analytics Specialist · Forever Booked</b><span>November 2023 – December 2024 · US, remote</span><ul><li>Managed CRM workflows, marketing analytics, customer lifecycle automation, and multi-channel campaign performance.</li></ul></div>
+                  <div class="job"><b>Senior Account Manager / Property Analyst · Unlimited Town Houses</b><span>November 2020 – August 2023</span><ul><li>Managed financial and operating data for a R500M property portfolio and improved reporting efficiency by 30%.</li></ul></div>
+                </div>
+                <div class="resume-side">
+                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>GoHighLevel</li><li>Zoho</li><li>GA4</li><li>Looker Studio</li><li>Power BI</li><li>Tableau</li><li>SQL</li><li>Python</li><li>APIs</li></ul>
+                  <h4>Credentials</h4><ul><li>BCom in Marketing and Management Science</li><li>HubSpot Marketing Software</li><li>Google Data Analytics</li><li>Salesforce Administrator in progress</li></ul>
+                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
+                </div>
+              </div></div>
+            </details>
+          </article>
+
+          <article class="candidate-card">
+            <div class="candidate-head">
+              <div class="identity"><div class="avatar">MB</div><div><h3 class="candidate-name">Muhammad B.</h3><p class="candidate-meta">Pakistan · HubSpot RevOps Specialist · 5+ years across CRM and sales</p></div></div>
+              <div class="salary"><strong>$2,000</strong><span>USD / month</span></div>
+            </div>
+            <div class="candidate-body">
+              <div class="candidate-story">
+                <p class="intro">Muhammad saw a dormant HubSpot instance and took ownership of it. He rebuilt the system, removed manual work, connected Sales, Marketing, and Finance, and gave leadership better revenue visibility. He has real sales experience too, so he understands the people and decisions behind the fields and workflows.</p>
+                <p class="evidence-label">Why this profile stands out</p>
+                <ul class="evidence">
+                  <li>Rebuilt HubSpot and deployed more than 10 workflows across Sales, Marketing, Finance, and Operations.</li>
+                  <li>Reduced manual work by 60% and improved MQL visibility by 40%.</li>
+                  <li>Built payment-cycle workflows, internal reminders, escalation rules, and executive revenue dashboards.</li>
+                  <li>Brings Salesforce-based Account Executive experience with SMB pipeline, billing, and customer success exposure.</li>
+                </ul>
+              </div>
+              <div class="candidate-media">
+                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
+                <div class="video-shell"><iframe src="https://drive.google.com/file/d/1lTja7-koqS-tC-zExALSQAmD7_oVs00l/preview" title="Muhammad B. introduction video" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+                <p class="availability">Availability: to confirm before interview.</p>
+              </div>
+            </div>
+            <details>
+              <summary>View résumé</summary>
+              <div class="resume"><div class="resume-grid">
+                <div>
+                  <h4>Recent experience</h4>
+                  <div class="job"><b>CRM Manager · MRS Technologies</b><span>October 2024 – present</span><ul><li>Rebuilt HubSpot, automated lead assignment and payment tracking, integrated acquisition channels, and created C-level dashboards.</li></ul></div>
+                  <div class="job"><b>Account Executive · Motive</b><span>June 2022 – December 2022</span><ul><li>Managed more than 200 SMB prospects in Salesforce across pipeline, billing cycles, and customer success.</li></ul></div>
+                  <div class="job"><b>Account Executive · Zones LLC</b><span>March 2021 – March 2022</span><ul><li>Managed customer relationships, supported growth, and analyzed revenue trends and pricing.</li></ul></div>
+                </div>
+                <div class="resume-side">
+                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Salesforce</li><li>SalesLoft</li><li>Dynamics CRM</li><li>Jira</li><li>Tableau</li><li>Python</li><li>RStudio</li><li>Excel</li></ul>
+                  <h4>Education</h4><ul><li>MS Business Analytics, in progress</li></ul>
+                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
+                </div>
+              </div></div>
+            </details>
+          </article>
+
+          <article class="candidate-card">
+            <div class="candidate-head">
+              <div class="identity"><div class="avatar">SE</div><div><h3 class="candidate-name">Silvia E.</h3><p class="candidate-meta">Colombia · Digital Revenue Operations and Customer Success · 4 years</p></div></div>
+              <div class="salary"><strong>$2,000</strong><span>USD / month</span></div>
+            </div>
+            <div class="candidate-body">
+              <div class="candidate-story">
+                <p class="intro">Silvia brings the best customer-journey view in the shortlist. She has worked inside HubSpot, supported executives during onboarding, managed integrations, improved lead conversion, tracked ARR, MRR, and SQLs, and handled retention and renewals. She can connect the system to what customers and revenue teams actually need.</p>
+                <p class="evidence-label">Why this profile stands out</p>
+                <ul class="evidence">
+                  <li>Built HubSpot automations that increased lead conversion by 15% and trained users to improve proficiency by 30%.</li>
+                  <li>Supported onboarding, retention, renewals, account receivables, and executive stakeholders at HubSpot.</li>
+                  <li>Managed Salesforce, Shopify, QuickBooks, LinkedIn Sales Navigator, and HubSpot integrations.</li>
+                  <li>Reported on ARR, MRR, SQLs, campaign performance, and client outcomes in Looker Studio.</li>
+                </ul>
+              </div>
+              <div class="candidate-media">
+                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
+                <div class="video-shell"><iframe src="https://drive.google.com/file/d/1T8l6oe2H7z2XZEnCypEYT4pumtb5Lbc7/preview" title="Silvia E. introduction video" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+                <p class="availability">Availability: to confirm before interview.</p>
+              </div>
+            </div>
+            <details>
+              <summary>View résumé</summary>
+              <div class="resume"><div class="resume-grid">
+                <div>
+                  <h4>Recent experience</h4>
+                  <div class="job"><b>Customer Success Manager, Digital Operations · EnsembleIQ</b><span>July 2024 – present · Remote</span><ul><li>Runs digital operations, campaign delivery, performance reporting, retention work, and cross-functional client support.</li></ul></div>
+                  <div class="job"><b>Sales Strategist / CRM Administrator · Onfloor Tech</b><span>August 2023 – July 2024 · Remote</span><ul><li>Built HubSpot automation, integrations, custom reports, revenue optimization work, and user training.</li></ul></div>
+                  <div class="job"><b>Customer Success Specialist · HubSpot</b><span>January 2023 – July 2024 · Remote</span><ul><li>Led onboarding and strategic guidance, supported integrations, improved retention, and reported on ARR, MRR, and SQL performance.</li></ul></div>
+                </div>
+                <div class="resume-side">
+                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Salesforce</li><li>Marketo</li><li>Jira</li><li>Looker Studio</li><li>Google Ads</li><li>Shopify</li><li>QuickBooks</li></ul>
+                  <h4>Credentials</h4><ul><li>BA in Marketing and International Business</li><li>HubSpot Marketing Software</li><li>HubSpot Sales Software</li><li>HubSpot Service Software</li></ul>
+                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
+                </div>
+              </div></div>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison">
+      <div class="wrap">
+        <p class="eyebrow" style="color:var(--glacier)">Side-by-side view</p>
+        <h2 class="section-title">Comparison</h2>
+        <p class="section-copy">Each candidate solves a different part of the RevOps problem. The best interview order depends on the first problem Osmind wants this hire to own.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Candidate</th><th>Best evidence</th><th>CRM depth</th><th>Data and reporting</th><th>Commercial context</th><th>Monthly expectation</th></tr></thead>
+            <tbody>
+              <tr><td>Bonge Dlamini</td><td>Enterprise HubSpot engineering, recurring revenue, CPQ, integrations</td><td>HubSpot admin and engineering; Salesforce exposure</td><td>Executive dashboards, SQL, Power BI, reconciliation</td><td>Sales, Marketing, Operations, invoicing</td><td>$3,800</td></tr>
+              <tr><td>Dwijesh Ramnath</td><td>Marketing-to-revenue systems, lifecycle automation, attribution</td><td>HubSpot, GoHighLevel, Zoho</td><td>SQL, GA4, Looker, Power BI, Tableau</td><td>Marketing, Customer Success, portfolio finance</td><td>$2,500</td></tr>
+              <tr><td>Muhammad B.</td><td>Rebuilt HubSpot and automated cross-functional work</td><td>HubSpot, Salesforce, Dynamics</td><td>C-level revenue and rep dashboards; Tableau</td><td>Sales, Marketing, Finance, Operations</td><td>$2,000</td></tr>
+              <tr><td>Silvia E.</td><td>HubSpot administration tied to onboarding, retention, and revenue</td><td>HubSpot; Salesforce and Marketo exposure</td><td>ARR, MRR, SQL, and campaign reporting in Looker</td><td>Customer Success, Sales, Marketing, renewals</td><td>$2,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div style="text-align:center">
+          <p class="eyebrow" style="color:var(--glacier)">Your Sagan contact</p>
+          <h2 class="section-title">Ready for the next conversation.</h2>
+        </div>
+        <div class="advisor-card">
+          <img src="jesus-pacheco.jpg" alt="Jesus Pacheco">
+          <div><p style="font:600 11px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.08em">Submitted by</p><h3>Jesus Pacheco</h3><p>Head of Revenue at Sagan. Jesus will coordinate interviews, confirm availability, and help Osmind move quickly on the right profile.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Prepared by Sagan for Osmind · Candidate information is confidential and intended only for hiring evaluation.</footer>
+</body>
+</html>
