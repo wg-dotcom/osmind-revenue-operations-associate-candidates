@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Four Revenue Operations Associate candidates selected for Osmind by Sagan.">
+  <meta name="description" content="Six Revenue Operations Associate candidates selected for Osmind by Sagan across two batches.">
   <title>Revenue Operations Associate Candidates | Osmind</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
     :root {
       --cream: #f5f2ed;
@@ -61,6 +61,11 @@
 
     .candidates-intro { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 34px; }
     .candidate-list { display: grid; gap: 28px; }
+    .batch-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding: 6px 2px 0; }
+    .batch-heading + .candidate-card { margin-top: -4px; }
+    .batch-heading:not(:first-child) { margin-top: 42px; padding-top: 42px; border-top: 1px solid var(--line); }
+    .batch-heading h3 { margin: 0; color: var(--glacier); font: 700 24px/1.2 var(--head); letter-spacing: -.025em; }
+    .batch-heading p { max-width: 570px; margin: 0; color: var(--muted); font-size: 14px; }
     .candidate-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--paper); }
     .candidate-head { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 30px 34px; color: #fff; background: var(--glacier); }
     .identity { display: flex; align-items: center; gap: 18px; }
@@ -83,6 +88,7 @@
     .video-shell { overflow: hidden; aspect-ratio: 16/9; border: 1px solid var(--line); border-radius: 16px; background: #000; }
     .video-shell video, .video-shell iframe { width: 100%; height: 100%; border: 0; object-fit: contain; background: #000; }
     .availability { margin: 14px 0 0; color: var(--muted); font-size: 13px; }
+    .availability-confirmed { color: #327060; font-weight: 600; }
     details { border-top: 1px solid var(--line); background: #fff; }
     summary { display: flex; align-items: center; justify-content: space-between; padding: 19px 34px; color: var(--glacier); cursor: pointer; list-style: none; font: 700 14px/1.2 var(--head); }
     summary::-webkit-details-marker { display: none; }
@@ -134,6 +140,8 @@
       main section { padding: 62px 0; }
       .criteria { grid-template-columns: 1fr; }
       .candidates-intro { display: block; }
+      .batch-heading { display: block; }
+      .batch-heading p { margin-top: 8px; }
       .candidate-head { grid-template-columns: 1fr; padding: 24px; }
       .salary { text-align: left; padding-left: 76px; }
       .candidate-story, .candidate-media { padding: 24px; }
@@ -158,12 +166,12 @@
       <div class="hero-grid">
         <div>
           <p class="eyebrow">Revenue Operations Associate</p>
-          <h1>Four operators who can make revenue data useful.</h1>
-          <p class="hero-copy">This shortlist starts in Mexico. Three candidates are based there. The fourth is an exceptional RevOps operator from Chile whose direct experience justified the LATAM exception. All four have verified intro videos.</p>
+          <h1>Six operators who can make revenue data useful.</h1>
+          <p class="hero-copy">This shortlist now includes two batches. The first centers on Mexico and hands-on HubSpot execution. The second adds two confirmed operators with deeper revenue analytics, Salesforce, and business-systems experience.</p>
         </div>
         <div class="hero-stat">
-          <strong>4</strong>
-          <span>video-confirmed candidates: three in Mexico and one exceptional LATAM profile</span>
+          <strong>6</strong>
+          <span>candidates across four LATAM countries, with four already confirmed and available</span>
         </div>
       </div>
     </div>
@@ -193,10 +201,15 @@
             <p class="eyebrow" style="color:var(--glacier)">Selected candidates</p>
             <h2 class="section-title">The shortlist</h2>
           </div>
-          <p class="section-copy">Mexico was the primary filter. The evidence below comes from each candidate’s résumé and application materials. Current availability still needs confirmation.</p>
+          <p class="section-copy">Mexico was the primary filter. The second batch expands the evidence across LATAM. Each profile shows its current confirmation status.</p>
         </div>
 
         <div class="candidate-list">
+          <div class="batch-heading">
+            <h3>Batch 1 · Original shortlist</h3>
+            <p>Four profiles centered on hands-on HubSpot, process design, and cross-functional RevOps.</p>
+          </div>
+
           <article class="candidate-card">
             <div class="candidate-head">
               <div class="identity"><div class="avatar">C</div><div><h3 class="candidate-name">Carol</h3><p class="candidate-meta">Mexico · Marketing Automation and CRM Strategist · 9+ years</p></div></div>
@@ -256,7 +269,7 @@
               <div class="candidate-media">
                 <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
                 <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/9af17dc0-4c01-42d3-82c5-4c9dcb373200">Your browser cannot play this video.</video></div>
-                <p class="availability">Availability: to confirm before interview.</p>
+                <p class="availability"><span class="availability-confirmed">Interest and availability confirmed.</span></p>
               </div>
             </div>
             <details>
@@ -336,7 +349,7 @@
               <div class="candidate-media">
                 <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
                 <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/f0877b2e-f777-42c6-8dfd-30188dd6fdee">Your browser cannot play this video.</video></div>
-                <p class="availability">Availability: to confirm before interview.</p>
+                <p class="availability"><span class="availability-confirmed">Interest and availability confirmed.</span></p>
               </div>
             </div>
             <details>
@@ -351,6 +364,91 @@
                 <div class="resume-side">
                   <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Zapier</li><li>Power BI</li><li>SQL</li><li>Clay</li><li>Instantly</li><li>HeyReach</li><li>Python</li><li>Jira</li></ul>
                   <h4>Credentials</h4><ul><li>HubSpot Revenue Operations</li><li>Business Intelligence, Pontificia Universidad Católica de Chile</li><li>Business Administration</li><li>Scrum Master</li></ul>
+                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
+                </div>
+              </div></div>
+            </details>
+          </article>
+
+          <div class="batch-heading">
+            <h3>Batch 2 · Confirmed operators</h3>
+            <p>Two additional profiles with confirmed interest and availability. This batch strengthens the shortlist in revenue analytics, Salesforce, automation, and operating systems.</p>
+          </div>
+
+          <article class="candidate-card">
+            <div class="candidate-head">
+              <div class="identity"><div class="avatar">G</div><div><h3 class="candidate-name">Gabriela</h3><p class="candidate-meta">Brazil · Revenue Analytics and Business Intelligence · 7+ years</p></div></div>
+              <div class="salary"><strong>$1,500</strong><span>USD / month</span></div>
+            </div>
+            <div class="candidate-body">
+              <div class="candidate-story">
+                <p class="intro">Gabriela is the revenue-data builder in Batch 2. She turns raw sales, finance, and operating data into metrics that leaders can trust. Her work combines SQL, Salesforce, Power BI, forecasting, and process automation across high-growth teams.</p>
+                <p class="evidence-label">Why this profile stands out</p>
+                <ul class="evidence">
+                  <li>Built SQL and Salesforce dashboards that identified $2.1M in untapped revenue.</li>
+                  <li>Created multi-source Power BI systems that reduced manual reporting time by 80%.</li>
+                  <li>Improved forecast accuracy by 15% and reduced leadership reporting from three days to six hours.</li>
+                  <li>Works across Finance, Sales, Partnerships, Carrier Operations, and executive leadership.</li>
+                </ul>
+              </div>
+              <div class="candidate-media">
+                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video on file</span></div>
+                <div class="video-shell"><iframe loading="lazy" src="https://drive.google.com/file/d/1s3DXDTwB-LbTrMZPY8OTPWofa0YrKoZ9/preview" title="Gabriela candidate introduction" allow="autoplay"></iframe></div>
+                <p class="availability"><span class="availability-confirmed">Interest and availability confirmed.</span></p>
+              </div>
+            </div>
+            <details>
+              <summary>View résumé</summary>
+              <div class="resume"><div class="resume-grid">
+                <div>
+                  <h4>Recent experience</h4>
+                  <div class="job"><b>Business Operations Analyst · Shippo</b><span>November 2025 – present</span><ul><li>Builds SQL analysis, reporting pipelines, and an automated disputes workflow across Finance and Carrier Operations.</li></ul></div>
+                  <div class="job"><b>Senior Business Analyst · Woof Gang</b><span>March 2024 – present</span><ul><li>Built multi-source Power BI and SQL systems for capacity, performance, forecasting, and expansion decisions.</li></ul></div>
+                  <div class="job"><b>Sales Analyst · Intermex</b><span>June 2023 – February 2024</span><ul><li>Built Salesforce and SQL dashboards, improved forecasts, and surfaced $2.1M in revenue opportunity.</li></ul></div>
+                </div>
+                <div class="resume-side">
+                  <h4>Core tools</h4><ul class="tag-list"><li>SQL</li><li>Power BI</li><li>Tableau</li><li>Salesforce</li><li>Excel</li><li>FranPOS</li><li>Jira</li><li>Certinia</li></ul>
+                  <h4>Education</h4><ul><li>Master of Science in Data Science, Texas Tech University</li><li>Bachelor of Business Administration in Management</li></ul>
+                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
+                </div>
+              </div></div>
+            </details>
+          </article>
+
+          <article class="candidate-card">
+            <div class="candidate-head">
+              <div class="identity"><div class="avatar">S</div><div><h3 class="candidate-name">Santos</h3><p class="candidate-meta">Argentina · Business Systems, Salesforce, and Automation · 4+ years</p></div></div>
+              <div class="salary"><strong>$1,000–$1,200</strong><span>USD / month</span></div>
+            </div>
+            <div class="candidate-body">
+              <div class="candidate-story">
+                <p class="intro">Santos is a strategic systems operator who can also build. He diagnoses messy processes, defines the operating rule, and turns it into Salesforce workflows, live dashboards, financial reporting, and AI-assisted automation.</p>
+                <p class="evidence-label">Why this profile stands out</p>
+                <ul class="evidence">
+                  <li>Built live pipeline, revenue, margin, capacity, and performance dashboards used by more than 200 people.</li>
+                  <li>Designed a Salesforce instance from the ground up and connected it to an AI-assisted case-management workflow.</li>
+                  <li>Builds reporting and automation with SQL, Python, Power Automate, n8n, and Google Apps Script.</li>
+                  <li>Works across Sales, Finance, Operations, Delivery, Customer Success, and executive leadership.</li>
+                </ul>
+              </div>
+              <div class="candidate-media">
+                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video on file</span></div>
+                <div class="video-shell"><iframe loading="lazy" src="https://drive.google.com/file/d/1n1PJ2gLLuYsyyZz83tdQANQ6DmUQxDLN/preview" title="Santos candidate introduction" allow="autoplay"></iframe></div>
+                <p class="availability"><span class="availability-confirmed">Interest and availability confirmed.</span></p>
+              </div>
+            </div>
+            <details>
+              <summary>View résumé</summary>
+              <div class="resume"><div class="resume-grid">
+                <div>
+                  <h4>Recent experience</h4>
+                  <div class="job"><b>Sales Operations, Financial Services · Globant</b><span>February 2025 – present</span><ul><li>Builds forecasting, margin, capacity, pipeline, revenue, and AI-assisted reporting for operating reviews and executive decisions.</li></ul></div>
+                  <div class="job"><b>Global Commercial Operations · Clara</b><span>November 2024 – January 2025</span><ul><li>Improved commercial reporting, data quality, CRM workflows, and visibility across Sales, Marketing, and Customer Success.</li></ul></div>
+                  <div class="job"><b>Business Operations and Systems Lead · EMET360</b><span>December 2022 – November 2024</span><ul><li>Owned process design, automation, data workflows, finance systems, Salesforce implementation, and leadership KPIs.</li></ul></div>
+                </div>
+                <div class="resume-side">
+                  <h4>Core tools</h4><ul class="tag-list"><li>Salesforce</li><li>HubSpot</li><li>Power BI</li><li>Looker Studio</li><li>Tableau</li><li>SQL</li><li>Python</li><li>Power Automate</li><li>n8n</li><li>Google Apps Script</li></ul>
+                  <h4>Credentials</h4><ul><li>Corporate Finance MicroMaster, UTDT — in progress</li><li>CS50x, HarvardX</li><li>Data Analyst, Coderhouse</li><li>Bachelor’s degree in Psychology, UCA</li><li>English C2</li></ul>
                   <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
                 </div>
               </div></div>
@@ -373,6 +471,8 @@
               <tr><td>Felix</td><td>Process discovery through implementation, QA, documentation, and handoff</td><td>HubSpot and broader business systems</td><td>Power BI, Tableau, SQL, structured data flows</td><td>Operations, support, recruiting, client delivery</td><td>$3,000</td></tr>
               <tr><td>Jaime</td><td>Associate-level HubSpot execution with disciplined campaign QA</td><td>HubSpot Marketing Hub</td><td>HubSpot dashboards, campaign reporting, Excel</td><td>Marketing, Sales, Operations</td><td>$2,500</td></tr>
               <tr><td>Elizabeth</td><td>End-to-end RevOps across CRM, data, automation, forecasting, and GTM</td><td>HubSpot with cross-functional ownership</td><td>Power BI, SQL, automated revenue reporting</td><td>Sales, Marketing, Customer Success, Finance</td><td>$3,000</td></tr>
+              <tr><td>Gabriela</td><td>Revenue analytics, metric design, forecasting, and automated executive reporting</td><td>Salesforce reporting and revenue-data workflows</td><td>SQL, Power BI, Tableau, forecasting</td><td>Sales, Finance, Operations, Partnerships</td><td>$1,500</td></tr>
+              <tr><td>Santos</td><td>Business-system design across Salesforce, reporting, finance, and AI automation</td><td>Salesforce administration with HubSpot exposure</td><td>Power BI, Looker Studio, Tableau, SQL, Python</td><td>Sales, Finance, Operations, Delivery</td><td>$1,000–$1,200</td></tr>
             </tbody>
           </table>
         </div>
