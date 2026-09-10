@@ -60,10 +60,16 @@
     .criterion p { margin: 0; color: var(--muted); font-size: 14px; }
 
     .candidates-intro { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 34px; }
+    .batch-tabs { display: inline-grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-bottom: 34px; padding: 6px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); }
+    .batch-tab { display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 190px; padding: 13px 18px; border: 0; border-radius: 999px; color: var(--glacier); background: transparent; cursor: pointer; font: 700 14px/1.2 var(--head); }
+    .batch-tab span { font: 500 11px/1.2 var(--mono); opacity: .7; }
+    .batch-tab:hover { background: var(--soft); }
+    .batch-tab[aria-selected="true"] { color: #fff; background: var(--glacier); }
+    .batch-tab[aria-selected="true"] span { color: var(--yellow); opacity: 1; }
+    .batch-tab:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+    .batch-panel[hidden], tr[hidden] { display: none; }
     .candidate-list { display: grid; gap: 28px; }
-    .batch-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding: 6px 2px 0; }
-    .batch-heading + .candidate-card { margin-top: -4px; }
-    .batch-heading:not(:first-child) { margin-top: 42px; padding-top: 42px; border-top: 1px solid var(--line); }
+    .batch-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; padding: 0 2px; }
     .batch-heading h3 { margin: 0; color: var(--glacier); font: 700 24px/1.2 var(--head); letter-spacing: -.025em; }
     .batch-heading p { max-width: 570px; margin: 0; color: var(--muted); font-size: 14px; }
     .candidate-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--paper); }
@@ -140,6 +146,8 @@
       main section { padding: 62px 0; }
       .criteria { grid-template-columns: 1fr; }
       .candidates-intro { display: block; }
+      .batch-tabs { display: grid; width: 100%; border-radius: 22px; }
+      .batch-tab { min-width: 0; padding-inline: 12px; }
       .batch-heading { display: block; }
       .batch-heading p { margin-top: 8px; }
       .candidate-head { grid-template-columns: 1fr; padding: 24px; }
@@ -204,12 +212,18 @@
           <p class="section-copy">Mexico was the primary filter. The second batch expands the evidence across LATAM. Each profile shows its current confirmation status.</p>
         </div>
 
-        <div class="candidate-list">
+        <div class="batch-tabs" role="tablist" aria-label="Candidate batches">
+          <button class="batch-tab" id="batch-tab-1" type="button" role="tab" aria-selected="true" aria-controls="batch-panel-1" data-batch="1">Batch 1 <span>4 candidates</span></button>
+          <button class="batch-tab" id="batch-tab-2" type="button" role="tab" aria-selected="false" aria-controls="batch-panel-2" data-batch="2" tabindex="-1">Batch 2 <span>2 candidates</span></button>
+        </div>
+
+        <div class="batch-panel" id="batch-panel-1" role="tabpanel" aria-labelledby="batch-tab-1">
           <div class="batch-heading">
             <h3>Batch 1 · Original shortlist</h3>
             <p>Four profiles centered on hands-on HubSpot, process design, and cross-functional RevOps.</p>
           </div>
 
+          <div class="candidate-list">
           <article class="candidate-card">
             <div class="candidate-head">
               <div class="identity"><div class="avatar">C</div><div><h3 class="candidate-name">Carol</h3><p class="candidate-meta">Mexico · Marketing Automation and CRM Strategist · 9+ years</p></div></div>
@@ -370,15 +384,20 @@
             </details>
           </article>
 
+          </div>
+        </div>
+
+        <div class="batch-panel" id="batch-panel-2" role="tabpanel" aria-labelledby="batch-tab-2" hidden>
           <div class="batch-heading">
             <h3>Batch 2 · Confirmed operators</h3>
             <p>Two additional profiles with confirmed interest and availability. This batch strengthens the shortlist in revenue analytics, Salesforce, automation, and operating systems.</p>
           </div>
 
+          <div class="candidate-list">
           <article class="candidate-card">
             <div class="candidate-head">
               <div class="identity"><div class="avatar">G</div><div><h3 class="candidate-name">Gabriela</h3><p class="candidate-meta">Brazil · Revenue Analytics and Business Intelligence · 7+ years</p></div></div>
-              <div class="salary"><strong>$1,500</strong><span>USD / month</span></div>
+              <div class="salary"><strong>$3,000</strong><span>USD / month</span></div>
             </div>
             <div class="candidate-body">
               <div class="candidate-story">
@@ -418,7 +437,7 @@
           <article class="candidate-card">
             <div class="candidate-head">
               <div class="identity"><div class="avatar">S</div><div><h3 class="candidate-name">Santos</h3><p class="candidate-meta">Argentina · Business Systems, Salesforce, and Automation · 4+ years</p></div></div>
-              <div class="salary"><strong>$1,000–$1,200</strong><span>USD / month</span></div>
+              <div class="salary"><strong>$2,800</strong><span>USD / month</span></div>
             </div>
             <div class="candidate-body">
               <div class="candidate-story">
@@ -455,6 +474,7 @@
             </details>
           </article>
         </div>
+        </div>
       </div>
     </section>
 
@@ -462,17 +482,17 @@
       <div class="wrap">
         <p class="eyebrow" style="color:var(--glacier)">Side-by-side view</p>
         <h2 class="section-title">Comparison</h2>
-        <p class="section-copy">Each candidate solves a different part of the RevOps problem. The best interview order depends on the first problem Osmind wants this hire to own.</p>
+        <p class="section-copy"><span id="comparison-batch-label">Showing Batch 1 candidates.</span> Use the tabs above to switch the comparison.</p>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Candidate</th><th>Best evidence</th><th>CRM depth</th><th>Data and reporting</th><th>Commercial context</th><th>Monthly expectation</th></tr></thead>
             <tbody>
-              <tr><td>Carol</td><td>Hands-on HubSpot architecture, lifecycle automation, and integrations</td><td>HubSpot, Zoho, Salesforce</td><td>Custom reports, KPI tracking, funnel and pipeline analysis</td><td>Marketing, Sales, CRM operations</td><td>$3,500</td></tr>
-              <tr><td>Felix</td><td>Process discovery through implementation, QA, documentation, and handoff</td><td>HubSpot and broader business systems</td><td>Power BI, Tableau, SQL, structured data flows</td><td>Operations, support, recruiting, client delivery</td><td>$3,000</td></tr>
-              <tr><td>Jaime</td><td>Associate-level HubSpot execution with disciplined campaign QA</td><td>HubSpot Marketing Hub</td><td>HubSpot dashboards, campaign reporting, Excel</td><td>Marketing, Sales, Operations</td><td>$2,500</td></tr>
-              <tr><td>Elizabeth</td><td>End-to-end RevOps across CRM, data, automation, forecasting, and GTM</td><td>HubSpot with cross-functional ownership</td><td>Power BI, SQL, automated revenue reporting</td><td>Sales, Marketing, Customer Success, Finance</td><td>$3,000</td></tr>
-              <tr><td>Gabriela</td><td>Revenue analytics, metric design, forecasting, and automated executive reporting</td><td>Salesforce reporting and revenue-data workflows</td><td>SQL, Power BI, Tableau, forecasting</td><td>Sales, Finance, Operations, Partnerships</td><td>$1,500</td></tr>
-              <tr><td>Santos</td><td>Business-system design across Salesforce, reporting, finance, and AI automation</td><td>Salesforce administration with HubSpot exposure</td><td>Power BI, Looker Studio, Tableau, SQL, Python</td><td>Sales, Finance, Operations, Delivery</td><td>$1,000–$1,200</td></tr>
+              <tr data-batch="1"><td>Carol</td><td>Hands-on HubSpot architecture, lifecycle automation, and integrations</td><td>HubSpot, Zoho, Salesforce</td><td>Custom reports, KPI tracking, funnel and pipeline analysis</td><td>Marketing, Sales, CRM operations</td><td>$3,500</td></tr>
+              <tr data-batch="1"><td>Felix</td><td>Process discovery through implementation, QA, documentation, and handoff</td><td>HubSpot and broader business systems</td><td>Power BI, Tableau, SQL, structured data flows</td><td>Operations, support, recruiting, client delivery</td><td>$3,000</td></tr>
+              <tr data-batch="1"><td>Jaime</td><td>Associate-level HubSpot execution with disciplined campaign QA</td><td>HubSpot Marketing Hub</td><td>HubSpot dashboards, campaign reporting, Excel</td><td>Marketing, Sales, Operations</td><td>$2,500</td></tr>
+              <tr data-batch="1"><td>Elizabeth</td><td>End-to-end RevOps across CRM, data, automation, forecasting, and GTM</td><td>HubSpot with cross-functional ownership</td><td>Power BI, SQL, automated revenue reporting</td><td>Sales, Marketing, Customer Success, Finance</td><td>$3,000</td></tr>
+              <tr data-batch="2" hidden><td>Gabriela</td><td>Revenue analytics, metric design, forecasting, and automated executive reporting</td><td>Salesforce reporting and revenue-data workflows</td><td>SQL, Power BI, Tableau, forecasting</td><td>Sales, Finance, Operations, Partnerships</td><td>$3,000</td></tr>
+              <tr data-batch="2" hidden><td>Santos</td><td>Business-system design across Salesforce, reporting, finance, and AI automation</td><td>Salesforce administration with HubSpot exposure</td><td>Power BI, Looker Studio, Tableau, SQL, Python</td><td>Sales, Finance, Operations, Delivery</td><td>$2,800</td></tr>
             </tbody>
           </table>
         </div>
@@ -494,5 +514,45 @@
   </main>
 
   <footer>Prepared by Sagan for Osmind · Candidate information is confidential and intended only for hiring evaluation.</footer>
+  <script>
+    const batchTabs = Array.from(document.querySelectorAll('.batch-tab'));
+    const batchPanels = Array.from(document.querySelectorAll('.batch-panel'));
+    const comparisonRows = Array.from(document.querySelectorAll('tbody tr[data-batch]'));
+    const comparisonLabel = document.getElementById('comparison-batch-label');
+
+    function showBatch(batch, moveFocus = false) {
+      batchTabs.forEach((tab) => {
+        const isSelected = tab.dataset.batch === batch;
+        tab.setAttribute('aria-selected', String(isSelected));
+        tab.tabIndex = isSelected ? 0 : -1;
+        if (isSelected && moveFocus) tab.focus();
+      });
+
+      batchPanels.forEach((panel) => {
+        panel.hidden = panel.id !== `batch-panel-${batch}`;
+      });
+
+      comparisonRows.forEach((row) => {
+        row.hidden = row.dataset.batch !== batch;
+      });
+
+      comparisonLabel.textContent = `Showing Batch ${batch} candidates.`;
+    }
+
+    batchTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => showBatch(tab.dataset.batch));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex = index;
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % batchTabs.length;
+        else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + batchTabs.length) % batchTabs.length;
+        else if (event.key === 'Home') nextIndex = 0;
+        else if (event.key === 'End') nextIndex = batchTabs.length - 1;
+        else return;
+
+        event.preventDefault();
+        showBatch(batchTabs[nextIndex].dataset.batch, true);
+      });
+    });
+  </script>
 </body>
 </html>
