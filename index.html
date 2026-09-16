@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Six Revenue Operations Associate candidates selected for Osmind by Sagan across two batches.">
-  <title>Revenue Operations Associate Candidates | Osmind</title>
+  <meta name="description" content="Two screened Revenue Operations Associate candidates selected for Osmind by Sagan.">
+  <title>Screened Revenue Operations Associate Candidates | Osmind</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -20,6 +20,7 @@
       --muted: #706f69;
       --line: rgba(9, 58, 62, .16);
       --soft: rgba(9, 58, 62, .055);
+      --success: #327060;
       --head: "Plus Jakarta Sans", sans-serif;
       --body: "Space Grotesk", sans-serif;
       --mono: "Fragment Mono", monospace;
@@ -29,13 +30,13 @@
     html { scroll-behavior: smooth; }
     body { margin: 0; color: var(--ink); background: var(--cream); font-family: var(--body); line-height: 1.55; }
     img, video, iframe { display: block; max-width: 100%; }
-    button { font: inherit; }
+    a { color: inherit; }
     .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
     .eyebrow { margin: 0 0 14px; color: var(--yellow); font: 600 12px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
-    .section-title { margin: 0; color: var(--glacier); font: 700 clamp(28px, 4vw, 42px)/1.12 var(--head); letter-spacing: -.035em; }
-    .section-copy { max-width: 710px; margin: 14px 0 0; color: var(--muted); font-size: 17px; }
+    .section-title { margin: 0; color: var(--glacier); font: 700 clamp(29px, 4vw, 44px)/1.12 var(--head); letter-spacing: -.035em; }
+    .section-copy { max-width: 760px; margin: 14px 0 0; color: var(--muted); font-size: 17px; }
 
-    header { background: var(--deep); color: #fff; border-top: 6px solid var(--yellow); }
+    header { color: #fff; background: var(--deep); border-top: 6px solid var(--yellow); }
     .brandbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,.14); }
     .brands { display: flex; align-items: center; gap: 18px; }
     .sagan { color: #fff; font: 800 24px/1 var(--head); letter-spacing: -.04em; }
@@ -44,62 +45,74 @@
     .client-logo { width: 120px; height: 34px; object-fit: contain; filter: brightness(0) invert(1); }
     .date { color: rgba(255,255,255,.68); font: 12px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
     .hero { padding: 76px 0 82px; }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, .55fr); gap: 72px; align-items: end; }
-    h1 { max-width: 790px; margin: 0; color: #fff; font: 700 clamp(42px, 6.5vw, 76px)/1 var(--head); letter-spacing: -.055em; }
-    .hero-copy { max-width: 720px; margin: 24px 0 0; color: rgba(255,255,255,.72); font-size: 19px; }
-    .hero-stat { padding: 26px; border: 1px solid rgba(255,255,255,.18); border-radius: 22px; background: rgba(255,255,255,.04); }
-    .hero-stat strong { display: block; color: var(--yellow); font: 700 56px/1 var(--mono); }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(270px, .5fr); gap: 72px; align-items: end; }
+    h1 { max-width: 830px; margin: 0; color: #fff; font: 700 clamp(42px, 6.5vw, 76px)/1 var(--head); letter-spacing: -.055em; }
+    .hero-copy { max-width: 780px; margin: 24px 0 0; color: rgba(255,255,255,.74); font-size: 19px; }
+    .hero-stat { padding: 28px; border: 1px solid rgba(255,255,255,.2); border-radius: 22px; background: rgba(255,255,255,.04); }
+    .hero-stat strong { display: block; color: var(--yellow); font: 700 54px/1 var(--mono); }
     .hero-stat span { display: block; margin-top: 10px; color: rgba(255,255,255,.82); font-size: 15px; }
 
-    main section { padding: 84px 0; }
-    .brief { background: var(--paper); border-bottom: 1px solid var(--line); }
-    .brief-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: start; }
-    .criteria { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .criterion { min-height: 132px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--cream); }
+    main section { padding: 82px 0; }
+    .decision { background: var(--paper); border-bottom: 1px solid var(--line); }
+    .decision-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: 70px; align-items: start; }
+    .decision-note { margin-top: 22px; padding: 18px 20px; border-left: 4px solid var(--yellow); color: var(--glacier); background: var(--cream); font-weight: 600; }
+    .criteria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .criterion { min-height: 178px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--cream); }
+    .criterion-number { display: inline-grid; width: 30px; height: 30px; margin-bottom: 26px; place-items: center; border-radius: 50%; color: var(--glacier); background: var(--yellow); font: 700 12px/1 var(--mono); }
     .criterion b { display: block; margin-bottom: 8px; color: var(--glacier); font: 700 16px/1.25 var(--head); }
     .criterion p { margin: 0; color: var(--muted); font-size: 14px; }
 
-    .candidates-intro { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 34px; }
-    .batch-tabs { display: inline-grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-bottom: 34px; padding: 6px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); }
-    .batch-tab { display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 190px; padding: 13px 18px; border: 0; border-radius: 999px; color: var(--glacier); background: transparent; cursor: pointer; font: 700 14px/1.2 var(--head); }
-    .batch-tab span { font: 500 11px/1.2 var(--mono); opacity: .7; }
-    .batch-tab:hover { background: var(--soft); }
-    .batch-tab[aria-selected="true"] { color: #fff; background: var(--glacier); }
-    .batch-tab[aria-selected="true"] span { color: var(--yellow); opacity: 1; }
-    .batch-tab:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
-    .batch-panel[hidden], tr[hidden] { display: none; }
-    .candidate-list { display: grid; gap: 28px; }
-    .batch-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; padding: 0 2px; }
-    .batch-heading h3 { margin: 0; color: var(--glacier); font: 700 24px/1.2 var(--head); letter-spacing: -.025em; }
-    .batch-heading p { max-width: 570px; margin: 0; color: var(--muted); font-size: 14px; }
+    .shortlist-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 34px; }
+    .candidate-list { display: grid; gap: 30px; }
     .candidate-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--paper); }
     .candidate-head { display: grid; grid-template-columns: 1fr auto; gap: 24px; padding: 30px 34px; color: #fff; background: var(--glacier); }
     .identity { display: flex; align-items: center; gap: 18px; }
     .avatar { display: grid; width: 58px; height: 58px; flex: 0 0 58px; place-items: center; border-radius: 50%; color: var(--glacier); background: var(--yellow); font: 800 17px/1 var(--head); }
-    .candidate-name { margin: 0; color: #fff; font: 700 25px/1.1 var(--head); letter-spacing: -.025em; }
+    .origin-tag { display: inline-flex; margin-bottom: 9px; padding: 6px 10px; border: 1px solid rgba(255,255,255,.26); border-radius: 999px; color: #fff; font: 600 10px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+    .origin-tag.new { color: var(--glacier); border-color: var(--yellow); background: var(--yellow); }
+    .candidate-name { margin: 0; color: #fff; font: 700 28px/1.1 var(--head); letter-spacing: -.025em; }
     .candidate-meta { margin: 7px 0 0; color: rgba(255,255,255,.72); font-size: 14px; }
     .salary { text-align: right; }
     .salary strong { display: block; color: var(--yellow); font: 700 23px/1.1 var(--mono); }
     .salary span { color: rgba(255,255,255,.65); font: 11px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
-    .candidate-body { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(300px, .92fr); }
+    .candidate-summary { padding: 30px 34px; border-bottom: 1px solid var(--line); }
+    .candidate-summary h3 { max-width: 760px; margin: 0; color: var(--glacier); font: 700 clamp(22px, 3vw, 31px)/1.2 var(--head); letter-spacing: -.025em; }
+    .candidate-summary p { max-width: 900px; margin: 12px 0 0; color: var(--muted); font-size: 16px; }
+    .signal-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 24px; }
+    .signal { padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
+    .signal span { display: block; color: var(--muted); font: 600 10px/1.2 var(--mono); letter-spacing: .07em; text-transform: uppercase; }
+    .signal strong { display: block; margin-top: 5px; color: var(--glacier); font: 700 15px/1.25 var(--head); }
+    .candidate-body { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr); }
     .candidate-story { padding: 34px; border-right: 1px solid var(--line); }
-    .intro { margin: 0; color: var(--glacier); font-size: 18px; line-height: 1.65; }
+    .impact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .impact { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--cream); }
+    .impact h4 { margin: 0; color: var(--glacier); font: 700 17px/1.25 var(--head); }
+    .impact .horizon { display: block; margin-bottom: 8px; color: var(--success); font: 600 10px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .impact ul { display: grid; gap: 9px; margin: 14px 0 0; padding: 0; list-style: none; }
+    .impact li { position: relative; padding-left: 18px; color: #465b5b; font-size: 14px; }
+    .impact li::before { content: ""; position: absolute; left: 0; top: .58em; width: 7px; height: 7px; border-radius: 50%; background: var(--yellow); }
     .evidence-label { margin: 30px 0 12px; color: var(--muted); font: 600 11px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .09em; }
     .evidence { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
     .evidence li { position: relative; padding-left: 24px; color: #465b5b; font-size: 15px; }
     .evidence li::before { content: ""; position: absolute; left: 0; top: .58em; width: 9px; height: 9px; border-radius: 50%; background: var(--yellow); }
+    .development-note { margin: 22px 0 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; color: var(--muted); background: var(--paper); font-size: 13px; }
+    .development-note strong { color: var(--glacier); }
     .candidate-media { padding: 26px; background: var(--soft); }
-    .video-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; color: var(--glacier); font: 700 13px/1.2 var(--head); }
-    .verified { color: #327060; font: 11px/1.2 var(--mono); text-transform: uppercase; }
+    .media-block + .media-block { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
+    .video-label { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; color: var(--glacier); font: 700 13px/1.2 var(--head); }
+    .verified { color: var(--success); font: 11px/1.2 var(--mono); text-transform: uppercase; }
     .video-shell { overflow: hidden; aspect-ratio: 16/9; border: 1px solid var(--line); border-radius: 16px; background: #000; }
     .video-shell video, .video-shell iframe { width: 100%; height: 100%; border: 0; object-fit: contain; background: #000; }
     .availability { margin: 14px 0 0; color: var(--muted); font-size: 13px; }
-    .availability-confirmed { color: #327060; font-weight: 600; }
-    .screening-resource { margin-top: 18px; padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); }
+    .availability-confirmed { color: var(--success); font-weight: 600; }
+    .screening-resource { margin-top: 18px; padding: 17px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); }
     .screening-resource p { margin: 0; color: var(--muted); font-size: 12px; }
     .screening-resource strong { display: block; margin-bottom: 5px; color: var(--glacier); font: 700 14px/1.25 var(--head); }
-    .resource-link { display: inline-flex; align-items: center; justify-content: center; margin-top: 12px; padding: 10px 14px; border-radius: 999px; color: #fff; background: var(--glacier); text-decoration: none; font: 700 12px/1.2 var(--head); }
+    .resource-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .resource-link { display: inline-flex; align-items: center; justify-content: center; padding: 10px 14px; border-radius: 999px; color: #fff; background: var(--glacier); text-decoration: none; font: 700 12px/1.2 var(--head); }
+    .resource-link.secondary { color: var(--glacier); border: 1px solid var(--line); background: var(--cream); }
     .resource-link:hover { background: var(--deep); }
+    .resource-link.secondary:hover { background: #ebe7df; }
     .resource-link:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
     details { border-top: 1px solid var(--line); background: #fff; }
     summary { display: flex; align-items: center; justify-content: space-between; padding: 19px 34px; color: var(--glacier); cursor: pointer; list-style: none; font: 700 14px/1.2 var(--head); }
@@ -118,29 +131,59 @@
     .tag-list li { padding: 7px 10px; border-radius: 999px; color: var(--glacier); background: var(--soft); font: 500 12px/1.2 var(--mono); }
     .private-note { margin: 18px 0 0; color: var(--muted); font-size: 12px; }
 
+    .onboarding { color: #fff; background: var(--deep); }
+    .onboarding .section-title { color: #fff; }
+    .onboarding-copy { max-width: 790px; margin: 16px 0 0; color: rgba(255,255,255,.72); font-size: 18px; }
+    .onboarding-stance { display: grid; grid-template-columns: 1.3fr .7fr; gap: 26px; align-items: start; margin-top: 34px; padding: 26px; border: 1px solid rgba(255,255,255,.17); border-radius: 20px; background: rgba(255,255,255,.04); }
+    .onboarding-stance strong { display: block; color: var(--yellow); font: 700 18px/1.25 var(--head); }
+    .onboarding-stance p { margin: 8px 0 0; color: rgba(255,255,255,.75); }
+    .support-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+    .support-list li { position: relative; padding-left: 20px; color: rgba(255,255,255,.78); font-size: 14px; }
+    .support-list li::before { content: ""; position: absolute; left: 0; top: .58em; width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); }
+    .plan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 26px; }
+    .plan-card { overflow: hidden; color: var(--ink); border: 1px solid rgba(255,255,255,.16); border-radius: 22px; background: var(--paper); }
+    .plan-head { padding: 26px 28px; color: #fff; background: var(--glacier); }
+    .plan-head span { display: inline-flex; margin-bottom: 10px; padding: 6px 10px; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; font: 600 10px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+    .plan-head h3 { margin: 0; color: #fff; font: 700 24px/1.2 var(--head); letter-spacing: -.025em; }
+    .plan-head p { margin: 10px 0 0; color: rgba(255,255,255,.72); font-size: 14px; }
+    .plan-phases { padding: 8px 28px 2px; }
+    .plan-phase { display: grid; grid-template-columns: 96px 1fr; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .plan-phase:last-child { border-bottom: 0; }
+    .phase-time { color: var(--success); font: 600 10px/1.35 var(--mono); letter-spacing: .07em; text-transform: uppercase; }
+    .phase-body h4 { margin: 0; color: var(--glacier); font: 700 16px/1.25 var(--head); }
+    .phase-body p { margin: 7px 0 0; color: var(--muted); font-size: 14px; }
+    .phase-output { display: block; margin-top: 10px; color: var(--glacier); font-size: 13px; }
+    .plan-test { margin: 0 28px 28px; padding: 17px 18px; border-left: 4px solid var(--yellow); color: var(--glacier); background: var(--cream); font-size: 14px; }
+    .plan-test strong { display: block; margin-bottom: 4px; font: 700 14px/1.2 var(--head); }
+
     .comparison { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .table-wrap { margin-top: 34px; overflow-x: auto; border: 1px solid var(--line); border-radius: 20px; }
-    table { width: 100%; min-width: 900px; border-collapse: collapse; background: #fff; }
+    table { width: 100%; min-width: 940px; border-collapse: collapse; background: #fff; }
     th { padding: 17px 18px; color: #fff; background: var(--glacier); text-align: left; font: 600 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .07em; }
     td { padding: 18px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }
     tr:last-child td { border-bottom: 0; }
     td:first-child { color: var(--glacier); font-weight: 700; }
+    .table-tag { display: inline-flex; padding: 5px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--glacier); font: 600 10px/1.2 var(--mono); text-transform: uppercase; }
 
-    .advisor-card { display: flex; align-items: center; gap: 28px; max-width: 760px; margin: 32px auto 0; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
+    .advisor-card { display: flex; align-items: center; gap: 28px; max-width: 790px; margin: 32px auto 0; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
     .advisor-card img { width: 92px; height: 92px; flex: 0 0 92px; border: 4px solid var(--yellow); border-radius: 50%; object-fit: cover; }
     .advisor-card h3 { margin: 2px 0 5px; color: var(--glacier); font: 700 23px/1.2 var(--head); }
     .advisor-card p { margin: 0; color: var(--muted); }
     footer { padding: 30px 20px; color: rgba(255,255,255,.62); background: var(--deep); text-align: center; font-size: 12px; }
 
-    @media (max-width: 860px) {
-      .hero-grid, .brief-grid { grid-template-columns: 1fr; gap: 38px; }
-      .hero-stat { max-width: 320px; }
+    @media (max-width: 900px) {
+      .hero-grid, .decision-grid { grid-template-columns: 1fr; gap: 38px; }
+      .hero-stat { max-width: 340px; }
+      .criteria { grid-template-columns: 1fr; }
+      .criterion { min-height: 0; }
+      .criterion-number { margin-bottom: 16px; }
       .candidate-body { grid-template-columns: 1fr; }
       .candidate-story { border-right: 0; border-bottom: 1px solid var(--line); }
       .resume-grid { grid-template-columns: 1fr; gap: 12px; }
+      .onboarding-stance, .plan-grid { grid-template-columns: 1fr; }
     }
 
-    @media (max-width: 620px) {
+    @media (max-width: 650px) {
       .wrap { width: min(100% - 24px, 1160px); }
       .brandbar { align-items: flex-start; }
       .brands { gap: 11px; }
@@ -149,20 +192,20 @@
       .date { display: none; }
       .hero { padding: 54px 0 58px; }
       .hero-copy { font-size: 17px; }
-      main section { padding: 62px 0; }
-      .criteria { grid-template-columns: 1fr; }
-      .candidates-intro { display: block; }
-      .batch-tabs { display: grid; width: 100%; border-radius: 22px; }
-      .batch-tab { min-width: 0; padding-inline: 12px; }
-      .batch-heading { display: block; }
-      .batch-heading p { margin-top: 8px; }
+      main section { padding: 60px 0; }
+      .shortlist-heading { display: block; }
+      .shortlist-heading .section-copy { margin-top: 16px; }
       .candidate-head { grid-template-columns: 1fr; padding: 24px; }
       .salary { text-align: left; padding-left: 76px; }
-      .candidate-story, .candidate-media { padding: 24px; }
+      .candidate-summary, .candidate-story, .candidate-media { padding: 24px; }
+      .signal-row, .impact-grid { grid-template-columns: 1fr; }
       summary { padding: 18px 24px; }
       .resume { padding: 2px 24px 26px; }
       .advisor-card { align-items: flex-start; padding: 24px; }
       .advisor-card img { width: 72px; height: 72px; flex-basis: 72px; }
+      .plan-head, .plan-phases { padding-inline: 22px; }
+      .plan-phase { grid-template-columns: 1fr; gap: 7px; }
+      .plan-test { margin-inline: 22px; }
     }
   </style>
 </head>
@@ -174,403 +217,205 @@
         <div class="divider" aria-hidden="true"></div>
         <img class="client-logo" src="osmind-logo.svg" alt="Osmind">
       </div>
-      <div class="date">Candidate shortlist · September 2026</div>
+      <div class="date">Two candidates · September 2026</div>
     </div>
+
     <div class="wrap hero">
       <div class="hero-grid">
         <div>
           <p class="eyebrow">Revenue Operations Associate</p>
-          <h1>Six operators who can make revenue data useful.</h1>
-          <p class="hero-copy">This shortlist now includes two batches. The first centers on Mexico and hands-on HubSpot execution. The second adds two confirmed operators with deeper revenue analytics, Salesforce, and business-systems experience.</p>
+          <h1>Two candidates worth meeting.</h1>
+          <p class="hero-copy">Your feedback was clear. You need someone who can do the work, question the request, and eventually own more of the RevOps function. I went back to the candidates we had already shared and screened the ones I still believed in. I used the same questions with new candidates. Elizabeth and Luis were the two who gave me more confidence after the call.</p>
         </div>
         <div class="hero-stat">
-          <strong>6</strong>
-          <span>candidates across four LATAM countries, with four already confirmed and available</span>
+          <strong>2 of 5</strong>
+          <span>candidates became stronger after the screening call</span>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="brief">
-      <div class="wrap brief-grid">
+    <section class="decision">
+      <div class="wrap decision-grid">
         <div>
-          <p class="eyebrow" style="color:var(--glacier)">The assignment</p>
-          <h2 class="section-title">Build the operating layer behind growth.</h2>
-          <p class="section-copy">This is not a CRM cleanup role. The associate will support the full customer journey: first touch, closed-won, onboarding, expansion, and retention. The job needs technical execution and commercial judgment.</p>
+          <p class="eyebrow" style="color:var(--glacier)">What changed</p>
+          <h2 class="section-title">I tested the part a résumé cannot show.</h2>
+          <p class="section-copy">The first page leaned too much on tools and previous tasks. That did not answer the real question: will this person think before building? I asked each candidate about something they owned, a time they pushed back, and what they want to own next.</p>
+          <p class="decision-note">Elizabeth was already in the first group. I kept her because the call confirmed the judgment behind her experience. Luis is new and was screened before I added him.</p>
         </div>
-        <div class="criteria">
-          <article class="criterion"><b>Hands-on systems work</b><p>Build HubSpot workflows, properties, pipelines, lists, dashboards, and integrations.</p></article>
-          <article class="criterion"><b>Reliable revenue data</b><p>Improve reporting, attribution, reconciliation, forecasting, and data hygiene.</p></article>
-          <article class="criterion"><b>Process before automation</b><p>Document the operating rule first. Then automate it without adding hidden failure points.</p></article>
-          <article class="criterion"><b>Cross-functional judgment</b><p>Work across Sales, Marketing, Customer Success, Finance, and leadership.</p></article>
+        <div class="criteria" aria-label="Screening criteria">
+          <article class="criterion"><span class="criterion-number">01</span><b>What did you actually own?</b><p>I asked for a specific workflow, pipeline, or system they built or changed themselves.</p></article>
+          <article class="criterion"><span class="criterion-number">02</span><b>When did you push back?</b><p>I wanted a real example of a bad request they challenged before doing the work.</p></article>
+          <article class="criterion"><span class="criterion-number">03</span><b>What do you want to own next?</b><p>I looked for a real reason to choose RevOps and an interest in taking on more of the function.</p></article>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <div class="candidates-intro">
-          <div>
-            <p class="eyebrow" style="color:var(--glacier)">Selected candidates</p>
-            <h2 class="section-title">The shortlist</h2>
-          </div>
-          <p class="section-copy">Mexico was the primary filter. The second batch expands the evidence across LATAM. Each profile shows its current confirmation status.</p>
+        <div class="shortlist-heading">
+          <div><p class="eyebrow" style="color:var(--glacier)">My recommendation</p><h2 class="section-title">Who I would meet</h2></div>
+          <p class="section-copy">I would interview both. For different reasons.</p>
         </div>
 
-        <div class="batch-tabs" role="tablist" aria-label="Candidate batches">
-          <button class="batch-tab" id="batch-tab-1" type="button" role="tab" aria-selected="true" aria-controls="batch-panel-1" data-batch="1">Batch 1 <span>4 candidates</span></button>
-          <button class="batch-tab" id="batch-tab-2" type="button" role="tab" aria-selected="false" aria-controls="batch-panel-2" data-batch="2" tabindex="-1">Batch 2 <span>2 candidates</span></button>
-        </div>
-
-        <div class="batch-panel" id="batch-panel-1" role="tabpanel" aria-labelledby="batch-tab-1">
-          <div class="batch-heading">
-            <h3>Batch 1 · Original shortlist</h3>
-            <p>Four profiles centered on hands-on HubSpot, process design, and cross-functional RevOps.</p>
-          </div>
-
-          <div class="candidate-list">
+        <div class="candidate-list">
           <article class="candidate-card">
             <div class="candidate-head">
-              <div class="identity"><div class="avatar">C</div><div><h3 class="candidate-name">Carol</h3><p class="candidate-meta">Mexico · Marketing Automation and CRM Strategist · 9+ years</p></div></div>
-              <div class="salary"><strong>$3,500</strong><span>USD / month</span></div>
-            </div>
-            <div class="candidate-body">
-              <div class="candidate-story">
-                <p class="intro">Carol is the strongest Mexico-based HubSpot operator in the pool. She builds the workflows, reports, lists, forms, integrations, and lifecycle rules herself. She also knows how to connect Marketing, Sales, and technical teams without turning the CRM into a mess.</p>
-                <p class="evidence-label">Why this profile stands out</p>
-                <ul class="evidence">
-                  <li>Owns HubSpot and Zoho automation across multiple business units and markets.</li>
-                  <li>Builds lifecycle workflows, lead scoring, segmentation, custom reports, forms, and pipeline processes.</li>
-                  <li>Diagnoses API and CRM integration failures and improves data accuracy.</li>
-                  <li>Uses HubSpot, Salesforce, Zoho, Zapier, Make, n8n, Stripe, and AI tools.</li>
-                </ul>
-              </div>
-              <div class="candidate-media">
-                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
-                <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/bf16485a-520d-41db-b44b-17e52fe0269a">Your browser cannot play this video.</video></div>
-                <p class="availability">Availability: to confirm before interview.</p>
-              </div>
-            </div>
-            <details>
-              <summary>View résumé</summary>
-              <div class="resume"><div class="resume-grid">
-                <div>
-                  <h4>Recent experience</h4>
-                  <div class="job"><b>CRM and Marketing Automation Senior Specialist · Seguros Confie</b><span>November 2023 – present</span><ul><li>Owns CRM strategy, workflow automation, integrations, reporting, data accuracy, and a full WhatsApp automation program.</li></ul></div>
-                  <div class="job"><b>Technical Marketing Manager · Independent agency work</b><span>November 2024 – present</span><ul><li>Builds HubSpot architecture, API integrations, workflows, reports, lists, forms, and email systems.</li></ul></div>
-                  <div class="job"><b>Senior Inbound Marketing Consultant · Grow X</b><span>January 2023 – November 2023</span><ul><li>Led HubSpot demand generation, lead quality, funnel performance, KPI tracking, and pipeline optimization.</li></ul></div>
-                </div>
-                <div class="resume-side">
-                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Salesforce</li><li>Zoho</li><li>Zapier</li><li>Make</li><li>n8n</li><li>Stripe</li><li>SharpSpring</li><li>Klaviyo</li></ul>
-                  <h4>Credentials</h4><ul><li>HubSpot Revenue Operations</li><li>HubSpot Marketing Hub</li><li>HubSpot Sales Hub</li><li>HubSpot Service Hub</li><li>Bachelor’s degree in Social Communications</li></ul>
-                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
-                </div>
-              </div></div>
-            </details>
-          </article>
-
-          <article class="candidate-card">
-            <div class="candidate-head">
-              <div class="identity"><div class="avatar">F</div><div><h3 class="candidate-name">Felix</h3><p class="candidate-meta">Mexico · Business Systems, Process, and Automation · 6+ years</p></div></div>
+              <div class="identity"><div class="avatar">E</div><div><span class="origin-tag">Previously shared · Screen confirmed the fit</span><h3 class="candidate-name">Elizabeth</h3><p class="candidate-meta">Chile · Revenue Operations · 7+ years</p></div></div>
               <div class="salary"><strong>$3,000</strong><span>USD / month</span></div>
             </div>
+            <div class="candidate-summary">
+              <h3>Elizabeth is the safest immediate fit.</h3>
+              <p>She has already owned RevOps work. The call showed that she does more than build workflows. She checks the goal, the timeline, and the team’s capacity before she starts. She is also comfortable saying no when the request does not make sense.</p>
+              <div class="signal-row"><div class="signal"><span>Can start with</span><strong>HubSpot and automation</strong></div><div class="signal"><span>Best example</span><strong>AI SDR and 5% MQL lift</strong></div><div class="signal"><span>Where she is going</span><strong>Owning the function</strong></div></div>
+            </div>
             <div class="candidate-body">
               <div class="candidate-story">
-                <p class="intro">Felix confirmed that he is a hands-on implementation operator. He maps the process, builds the system, handles edge cases, and stays involved through adoption. His strongest evidence is in automation recovery, product delivery, and change management.</p>
-                <p class="evidence-label">Screening evidence · September 16</p>
-                <ul class="evidence">
-                  <li>Recovered a finance automation after a Jotform privacy change removed 70% of access. He built an API and webhook workaround, then added proactive vendor-change monitoring.</li>
-                  <li>Product-managed GEOCX from zero to a live mobile construction product. He defined workflows, edge cases, and requirements with a distributed development team.</li>
-                  <li>Moved field teams from paper to digital compliance with demos, training, and a knowledge base.</li>
-                  <li>Best fit: implementation and systems ownership. The next interview should test direct strategic pushback and long-term RevOps leadership ambition.</li>
-                </ul>
+                <div class="impact-grid">
+                  <article class="impact"><span class="horizon">Immediate impact</span><h4>She can take work off the team quickly</h4><ul><li>Build and clean up HubSpot workflows, lead routing, lifecycle rules, and reports.</li><li>Turn requests from Sales, Marketing, Customer Success, and Finance into clear priorities.</li><li>Catch the wrong solution before the team spends time building it.</li></ul></article>
+                  <article class="impact"><span class="horizon">Long-term impact</span><h4>She can grow into the owner</h4><ul><li>Set the rules for how the revenue teams use the CRM.</li><li>Expand from HubSpot into Salesforce and the systems around it.</li><li>Decide what the team should fix next as the function grows.</li></ul></article>
+                </div>
+                <p class="evidence-label">What I learned in the call</p>
+                <ul class="evidence"><li>She built an AI SDR that qualified WhatsApp leads, scored MQLs, updated HubSpot, created deals and tasks, and routed the right leads to Sales.</li><li>It improved MQL conversion by about 5%.</li><li>She now checks the goal, timeline, and capacity before accepting a request. If the request is wrong, she pushes back and proposes another way.</li><li>She wants to lead RevOps and is finishing her Salesforce Administrator certification.</li></ul>
               </div>
               <div class="candidate-media">
-                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
-                <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/9af17dc0-4c01-42d3-82c5-4c9dcb373200">Your browser cannot play this video.</video></div>
+                <div class="media-block">
+                  <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
+                  <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/f0877b2e-f777-42c6-8dfd-30188dd6fdee">Your browser cannot play this video.</video></div>
+                </div>
+                <div class="media-block">
+                  <div class="video-label"><span>Screening interview</span><span class="verified">Recorded screening</span></div>
+                  <div class="video-shell"><iframe loading="lazy" src="https://drive.google.com/file/d/1OnJ9BrU66q1yQgrZa49fBlGDN4nIxZ_8/preview" title="Elizabeth screening interview" allow="autoplay" allowfullscreen></iframe></div>
+                </div>
                 <p class="availability"><span class="availability-confirmed">Screening completed · September 16, 2026.</span> Immediately available.</p>
-                <div class="screening-resource">
-                  <strong>Screening resources</strong>
-                  <p>Jesus and Felix · 11:30 AM GMT−3</p>
-                  <a class="resource-link" href="https://drive.google.com/file/d/1sRfwgAqe5_Ma7N3MmcrH4j2ZRm2TlmcS/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Open Google recording</a>
-                  <a class="resource-link" href="https://docs.google.com/document/d/19LYJUWh1ZKon3IUA8rdwyhQW1D2mW5zmVCj0ZzXbJNA/edit?usp=meet_tnfm_calendar" target="_blank" rel="noopener noreferrer">Open Gemini notes</a>
-                </div>
+                <div class="screening-resource"><strong>Screening evidence</strong><p>Jesus and Elizabeth</p><div class="resource-links"><a class="resource-link" href="https://drive.google.com/file/d/1OnJ9BrU66q1yQgrZa49fBlGDN4nIxZ_8/view?usp=drive_web" target="_blank" rel="noopener noreferrer">Open recording</a><a class="resource-link secondary" href="https://docs.google.com/document/d/1Arz6_WixCkw4KVGFfXO9LjvmTTPZbMRNjz5iFE421E4/edit?usp=meet_tnfm_calendar" target="_blank" rel="noopener noreferrer">Read notes</a></div></div>
               </div>
             </div>
-            <details>
-              <summary>View résumé</summary>
-              <div class="resume"><div class="resume-grid">
-                <div>
-                  <h4>Recent experience</h4>
-                  <div class="job"><b>IT Project Manager, Support and Automations · Virtual Latinos</b><span>December 2025 – present</span><ul><li>Maps business processes and builds maintainable HubSpot, automation, dashboard, and governance solutions.</li></ul></div>
-                  <div class="job"><b>Implementation Manager · TEOPM</b><span>December 2023 – December 2025</span><ul><li>Led four US client implementations across discovery, configuration, custom development, testing, training, and launch.</li></ul></div>
-                  <div class="job"><b>Product Manager and Product Owner · SECT Telecommunications / Vision TECH</b><span>2014 – 2021</span><ul><li>Translated customer needs into workflows, requirements, tests, roadmaps, and product improvements.</li></ul></div>
-                </div>
-                <div class="resume-side">
-                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Zapier</li><li>Jotform</li><li>Power BI</li><li>Tableau</li><li>SQL</li><li>Python</li><li>Node.js</li><li>REST APIs</li><li>Jira</li></ul>
-                  <h4>Credentials</h4><ul><li>Master of Information Technology</li><li>Bachelor of Mechatronics Engineering</li><li>Smartsheet Aligned Certified Solution Professional</li><li>English C1</li></ul>
-                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
-                </div>
-              </div></div>
-            </details>
+            <details><summary>View résumé</summary><div class="resume"><div class="resume-grid">
+              <div><h4>Recent experience</h4><div class="job"><b>Revenue Operations Contractor · Parker</b><span>2026</span><ul><li>Cleaned up HubSpot, automated processes, connected outreach tools, and fixed UTM tracking for a US fintech.</li></ul></div><div class="job"><b>Revenue Operations Manager · Total Abogados</b><span>2024 – 2026</span><ul><li>Built CRM automation for the revenue teams, created dashboards, set reporting rules, and improved lead routing.</li></ul></div><div class="job"><b>Sales Operations Manager · Fracttal</b><span>2021 – 2023</span><ul><li>Owned pipeline reporting, forecasting, KPIs, and leadership reporting across LATAM, the US, and Spain.</li></ul></div></div>
+              <div class="resume-side"><h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Zapier</li><li>Power BI</li><li>SQL</li><li>Clay</li><li>Outreach</li><li>Python</li><li>Jira</li></ul><h4>Credentials</h4><ul><li>HubSpot Revenue Operations</li><li>Business Intelligence, Pontificia Universidad Católica de Chile</li><li>Business Administration</li><li>Scrum Master</li></ul><p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p></div>
+            </div></div></details>
           </article>
 
           <article class="candidate-card">
             <div class="candidate-head">
-              <div class="identity"><div class="avatar">J</div><div><h3 class="candidate-name">Jaime</h3><p class="candidate-meta">Mexico · HubSpot Marketing Automation · Associate-level operator</p></div></div>
-              <div class="salary"><strong>$2,500</strong><span>USD / month</span></div>
-            </div>
-            <div class="candidate-body">
-              <div class="candidate-story">
-                <p class="intro">Jaime is the strongest associate-level match in Mexico. He already owns a full HubSpot Marketing Hub environment. He builds multi-step workflows, segmentation, enrollment and suppression logic, dashboards, documentation, and pre-launch QA. He is earlier in his career, but the daily execution is directly relevant.</p>
-                <p class="evidence-label">Why this profile stands out</p>
-                <ul class="evidence">
-                  <li>Owns the full HubSpot Marketing Hub environment for multiple brand initiatives.</li>
-                  <li>Builds workflows, email campaigns, segmentation, enrollment criteria, and suppression logic.</li>
-                  <li>Runs link, token, audience, timing, and formatting QA before launch.</li>
-                  <li>Maintains campaign calendars, clean naming conventions, documentation, and auditability.</li>
-                </ul>
-              </div>
-              <div class="candidate-media">
-                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
-                <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/4fb05a6e-6ee0-4cf0-8205-163d137c08d9">Your browser cannot play this video.</video></div>
-                <p class="availability">Availability: to confirm before interview.</p>
-              </div>
-            </div>
-            <details>
-              <summary>View résumé</summary>
-              <div class="resume"><div class="resume-grid">
-                <div>
-                  <h4>Recent experience</h4>
-                  <div class="job"><b>Head of Marketing · Impressline</b><span>2025 – present</span><ul><li>Owns HubSpot Marketing Hub, campaign workflows, segmentation, dashboards, QA, calendars, and documentation.</li></ul></div>
-                  <div class="job"><b>Business Development Engineer · Grupo Industronic</b><span>2025</span><ul><li>Maintained CRM and pipeline records across prospecting, coordination, and contract closure.</li></ul></div>
-                  <div class="job"><b>Marketing Intern · Cooper Lighting Solutions</b><span>2024 – 2025</span><ul><li>Supported B2B campaign operations, asset control, purchasing, and event-production timelines.</li></ul></div>
-                </div>
-                <div class="resume-side">
-                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>HubSpot Dashboards</li><li>Google Analytics</li><li>Excel</li><li>Claude</li><li>ChatGPT</li></ul>
-                  <h4>Education</h4><ul><li>Bachelor’s degree in International Marketing, Universidad de Monterrey</li><li>Professional English, TOEFL 580</li></ul>
-                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
-                </div>
-              </div></div>
-            </details>
-          </article>
-
-          <article class="candidate-card">
-            <div class="candidate-head">
-              <div class="identity"><div class="avatar">E</div><div><h3 class="candidate-name">Elizabeth</h3><p class="candidate-meta">Chile · Exceptional LATAM profile · Revenue Operations · 7+ years</p></div></div>
+              <div class="identity"><div class="avatar">LP</div><div><span class="origin-tag new">New · Screened before sharing</span><h3 class="candidate-name">Luis Pedro</h3><p class="candidate-meta">Guatemala · SaaS Commercial Operations and RevOps · 5+ years</p></div></div>
               <div class="salary"><strong>$3,000</strong><span>USD / month</span></div>
             </div>
-            <div class="candidate-body">
-              <div class="candidate-story">
-                <p class="intro">Elizabeth strengthened her case in the screening. She combines hands-on HubSpot automation with the judgment to challenge requests, set priorities, and connect the work to a revenue goal. She is the clearest RevOps-owner profile in Batch 1.</p>
-                <p class="evidence-label">Screening evidence · September 16</p>
-                <ul class="evidence">
-                  <li>Built an AI SDR workflow that qualified WhatsApp leads, scored MQLs, updated HubSpot, created deals and tasks, and routed the sales team.</li>
-                  <li>The workflow improved MQL conversion by about 5%.</li>
-                  <li>Explained how she now tests the goal, timeline, and team capacity before execution. She pushes back and negotiates priorities when needed.</li>
-                  <li>Available immediately. She is completing a Salesforce Administrator certification and wants to grow into RevOps leadership. Recommendation: advance.</li>
-                </ul>
-              </div>
-              <div class="candidate-media">
-                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
-                <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/f0877b2e-f777-42c6-8dfd-30188dd6fdee">Your browser cannot play this video.</video></div>
-                <p class="availability"><span class="availability-confirmed">Screening completed · September 16, 2026.</span> Immediately available.</p>
-                <div class="screening-resource">
-                  <strong>Screening resources</strong>
-                  <p>Jesus and Elizabeth · 10:30 AM GMT−3</p>
-                  <a class="resource-link" href="https://drive.google.com/file/d/1OnJ9BrU66q1yQgrZa49fBlGDN4nIxZ_8/view?usp=drive_web" target="_blank" rel="noopener noreferrer">Open Google recording</a>
-                  <a class="resource-link" href="https://docs.google.com/document/d/1Arz6_WixCkw4KVGFfXO9LjvmTTPZbMRNjz5iFE421E4/edit?usp=meet_tnfm_calendar" target="_blank" rel="noopener noreferrer">Open Gemini notes</a>
-                </div>
-              </div>
-            </div>
-            <details>
-              <summary>View résumé</summary>
-              <div class="resume"><div class="resume-grid">
-                <div>
-                  <h4>Recent experience</h4>
-                  <div class="job"><b>Revenue Operations Contractor · Parker</b><span>2026</span><ul><li>Owns HubSpot hygiene, cleanup, process automation, outreach integrations, and UTM tracking for a US fintech.</li></ul></div>
-                  <div class="job"><b>Revenue Operations Manager · Total Abogados</b><span>2024 – 2026</span><ul><li>Built cross-functional CRM automation, revenue dashboards, reporting standards, and lead-routing systems.</li></ul></div>
-                  <div class="job"><b>Sales Operations Manager · Fracttal</b><span>2021 – 2023</span><ul><li>Led pipeline, forecasting, GTM strategy, KPI management, and C-level reporting across LATAM, the US, and Spain.</li></ul></div>
-                </div>
-                <div class="resume-side">
-                  <h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Zapier</li><li>Power BI</li><li>SQL</li><li>Clay</li><li>Instantly</li><li>HeyReach</li><li>Python</li><li>Jira</li></ul>
-                  <h4>Credentials</h4><ul><li>HubSpot Revenue Operations</li><li>Business Intelligence, Pontificia Universidad Católica de Chile</li><li>Business Administration</li><li>Scrum Master</li></ul>
-                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
-                </div>
-              </div></div>
-            </details>
-          </article>
-
-          </div>
-        </div>
-
-        <div class="batch-panel" id="batch-panel-2" role="tabpanel" aria-labelledby="batch-tab-2" hidden>
-          <div class="batch-heading">
-            <h3>Batch 2 · Confirmed operators</h3>
-            <p>Two additional profiles with confirmed interest and availability. This batch strengthens the shortlist in revenue analytics, Salesforce, automation, and operating systems.</p>
-          </div>
-
-          <div class="candidate-list">
-          <article class="candidate-card">
-            <div class="candidate-head">
-              <div class="identity"><div class="avatar">G</div><div><h3 class="candidate-name">Gabriela</h3><p class="candidate-meta">Brazil · Revenue Analytics and Business Intelligence · 7+ years</p></div></div>
-              <div class="salary"><strong>$3,000</strong><span>USD / month</span></div>
+            <div class="candidate-summary">
+              <h3>Luis is the less obvious profile. That is why I would meet him.</h3>
+              <p>He has worked closer to customers and revenue than to CRM administration. In the call, he did exactly what we wanted to test. He questioned the requested solution, found the actual problem, and built something simpler for the people who needed to use it.</p>
+              <div class="signal-row"><div class="signal"><span>He brings</span><strong>Sales-side judgment</strong></div><div class="signal"><span>Best example</span><strong>Four pipelines, one view</strong></div><div class="signal"><span>Where he is going</span><strong>RevOps and BI</strong></div></div>
             </div>
             <div class="candidate-body">
               <div class="candidate-story">
-                <p class="intro">Gabriela is the revenue-data builder in Batch 2. She turns raw sales, finance, and operating data into metrics that leaders can trust. Her work combines SQL, Salesforce, Power BI, forecasting, and process automation across high-growth teams.</p>
-                <p class="evidence-label">Why this profile stands out</p>
-                <ul class="evidence">
-                  <li>Built SQL and Salesforce dashboards that identified $2.1M in untapped revenue.</li>
-                  <li>Created multi-source Power BI systems that reduced manual reporting time by 80%.</li>
-                  <li>Improved forecast accuracy by 15% and reduced leadership reporting from three days to six hours.</li>
-                  <li>Works across Finance, Sales, Partnerships, Carrier Operations, and executive leadership.</li>
-                </ul>
+                <div class="impact-grid">
+                  <article class="impact"><span class="horizon">Immediate impact</span><h4>He can improve how work gets defined</h4><ul><li>Ask what the team is trying to accomplish before accepting the requested build.</li><li>Keep CRM records, account health, and commercial follow-up clean.</li><li>Document handoffs so commitments do not get lost between teams.</li></ul></article>
+                  <article class="impact"><span class="horizon">Long-term impact</span><h4>He can connect the business to the systems</h4><ul><li>Bring the customer and seller perspective into RevOps decisions.</li><li>Use his BI training to make the team’s data useful.</li><li>Get the people using the system and the people building it on the same page.</li></ul></article>
+                </div>
+                <p class="evidence-label">What I learned in the call</p>
+                <ul class="evidence"><li>A marketing agency asked him to install a standard monday.com template. He stopped and asked what leadership actually needed to see.</li><li>The answer was visibility across four pipelines. He connected them and gave leadership one place to see the operation.</li><li>His method is simple: ask questions, understand the daily use case, propose another way, and agree on the build before starting.</li><li>He is completing a master’s degree in Business Intelligence and Analytics and wants to move into RevOps.</li></ul>
+                <p class="development-note"><strong>Why I am recommending him:</strong> Luis already showed that he can understand the problem, challenge the first request, and design a better solution. His instinct to question, simplify, and connect the work to the user is already there. The first month gives him direct ownership of a real workflow inside Osmind’s stack.</p>
               </div>
               <div class="candidate-media">
-                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video on file</span></div>
-                <div class="video-shell"><iframe loading="lazy" src="https://drive.google.com/file/d/1s3DXDTwB-LbTrMZPY8OTPWofa0YrKoZ9/preview" title="Gabriela candidate introduction" allow="autoplay"></iframe></div>
-                <p class="availability"><span class="availability-confirmed">Interest and availability confirmed.</span></p>
+                <div class="media-block">
+                  <div class="video-label"><span>Candidate introduction</span><span class="verified">Video verified</span></div>
+                  <div class="video-shell"><video controls preload="metadata" playsinline src="https://candidate-video.com/uploads/26e36e8d-94d8-4fca-97fe-4be342d0ae08">Your browser cannot play this video.</video></div>
+                </div>
+                <div class="media-block">
+                  <div class="video-label"><span>Screening interview</span><span class="verified">Recorded screening</span></div>
+                  <div class="video-shell"><iframe loading="lazy" src="https://drive.google.com/file/d/1mmovmgx9c2L4pqnkRFCho_6RgGLI8aqK/preview" title="Luis Pedro screening interview" allow="autoplay" allowfullscreen></iframe></div>
+                </div>
+                <p class="availability"><span class="availability-confirmed">Screening completed · September 16, 2026.</span> Interest confirmed.</p>
+                <div class="screening-resource"><strong>Screening evidence</strong><p>Jesus and Luis Pedro</p><div class="resource-links"><a class="resource-link" href="https://drive.google.com/file/d/1mmovmgx9c2L4pqnkRFCho_6RgGLI8aqK/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Open recording</a><a class="resource-link secondary" href="https://docs.google.com/document/d/16lU0p9RW0PUdH6TSPmWfyGt7hmPU0jz7ZSp7TTDuJ8c/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">Read notes</a></div></div>
               </div>
             </div>
-            <details>
-              <summary>View résumé</summary>
-              <div class="resume"><div class="resume-grid">
-                <div>
-                  <h4>Recent experience</h4>
-                  <div class="job"><b>Business Operations Analyst · Shippo</b><span>November 2025 – present</span><ul><li>Builds SQL analysis, reporting pipelines, and an automated disputes workflow across Finance and Carrier Operations.</li></ul></div>
-                  <div class="job"><b>Senior Business Analyst · Woof Gang</b><span>March 2024 – present</span><ul><li>Built multi-source Power BI and SQL systems for capacity, performance, forecasting, and expansion decisions.</li></ul></div>
-                  <div class="job"><b>Sales Analyst · Intermex</b><span>June 2023 – February 2024</span><ul><li>Built Salesforce and SQL dashboards, improved forecasts, and surfaced $2.1M in revenue opportunity.</li></ul></div>
-                </div>
-                <div class="resume-side">
-                  <h4>Core tools</h4><ul class="tag-list"><li>SQL</li><li>Power BI</li><li>Tableau</li><li>Salesforce</li><li>Excel</li><li>FranPOS</li><li>Jira</li><li>Certinia</li></ul>
-                  <h4>Education</h4><ul><li>Master of Science in Data Science, Texas Tech University</li><li>Bachelor of Business Administration in Management</li></ul>
-                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
-                </div>
-              </div></div>
-            </details>
+            <details><summary>View résumé</summary><div class="resume"><div class="resume-grid">
+              <div><h4>Recent experience</h4><div class="job"><b>Account Executive · iConnections</b><span>October 2025 – present</span><ul><li>Keeps CRM data accurate across a $2.8M portfolio and prepares business reviews for senior leaders.</li></ul></div><div class="job"><b>Account Executive · Plecto</b><span>November 2024 – October 2025</span><ul><li>Reviewed CRM data every month across 60+ accounts to flag revenue risk and start the right follow-up.</li></ul></div><div class="job"><b>Account Management, Commercial Focus · monday.com</b><span>April 2021 – October 2024</span><ul><li>Built custom workflows and wrote the objection-handling and negotiation guides used by the commercial team.</li></ul></div><div class="job"><b>Sales Process Consultant · INTECAP</b><span>March 2021 – August 2021</span><ul><li>Used Lean Six Sigma to redesign the sales process and cut the sales cycle by 18%.</li></ul></div></div>
+              <div class="resume-side"><h4>Core tools</h4><ul class="tag-list"><li>HubSpot</li><li>Salesforce</li><li>monday.com</li><li>Outreach</li><li>Salesloft</li><li>CRM auditing</li><li>Lean Six Sigma</li></ul><h4>Credentials</h4><ul><li>Master in Business Intelligence and Analytics — in progress</li><li>Bachelor of Clinical Psychology</li><li>Google Project Management Certification</li><li>English C2</li></ul><p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p></div>
+            </div></div></details>
           </article>
-
-          <article class="candidate-card">
-            <div class="candidate-head">
-              <div class="identity"><div class="avatar">S</div><div><h3 class="candidate-name">Santos</h3><p class="candidate-meta">Argentina · Business Systems, Salesforce, and Automation · 4+ years</p></div></div>
-              <div class="salary"><strong>$2,800</strong><span>USD / month</span></div>
-            </div>
-            <div class="candidate-body">
-              <div class="candidate-story">
-                <p class="intro">Santos is a strategic systems operator who can also build. He diagnoses messy processes, defines the operating rule, and turns it into Salesforce workflows, live dashboards, financial reporting, and AI-assisted automation.</p>
-                <p class="evidence-label">Why this profile stands out</p>
-                <ul class="evidence">
-                  <li>Built live pipeline, revenue, margin, capacity, and performance dashboards used by more than 200 people.</li>
-                  <li>Designed a Salesforce instance from the ground up and connected it to an AI-assisted case-management workflow.</li>
-                  <li>Builds reporting and automation with SQL, Python, Power Automate, n8n, and Google Apps Script.</li>
-                  <li>Works across Sales, Finance, Operations, Delivery, Customer Success, and executive leadership.</li>
-                </ul>
-              </div>
-              <div class="candidate-media">
-                <div class="video-label"><span>Candidate introduction</span><span class="verified">Video on file</span></div>
-                <div class="video-shell"><iframe loading="lazy" src="https://drive.google.com/file/d/1n1PJ2gLLuYsyyZz83tdQANQ6DmUQxDLN/preview" title="Santos candidate introduction" allow="autoplay"></iframe></div>
-                <p class="availability"><span class="availability-confirmed">Interest and availability confirmed.</span></p>
-              </div>
-            </div>
-            <details>
-              <summary>View résumé</summary>
-              <div class="resume"><div class="resume-grid">
-                <div>
-                  <h4>Recent experience</h4>
-                  <div class="job"><b>Sales Operations, Financial Services · Globant</b><span>February 2025 – present</span><ul><li>Builds forecasting, margin, capacity, pipeline, revenue, and AI-assisted reporting for operating reviews and executive decisions.</li></ul></div>
-                  <div class="job"><b>Global Commercial Operations · Clara</b><span>November 2024 – January 2025</span><ul><li>Improved commercial reporting, data quality, CRM workflows, and visibility across Sales, Marketing, and Customer Success.</li></ul></div>
-                  <div class="job"><b>Business Operations and Systems Lead · EMET360</b><span>December 2022 – November 2024</span><ul><li>Owned process design, automation, data workflows, finance systems, Salesforce implementation, and leadership KPIs.</li></ul></div>
-                </div>
-                <div class="resume-side">
-                  <h4>Core tools</h4><ul class="tag-list"><li>Salesforce</li><li>HubSpot</li><li>Power BI</li><li>Looker Studio</li><li>Tableau</li><li>SQL</li><li>Python</li><li>Power Automate</li><li>n8n</li><li>Google Apps Script</li></ul>
-                  <h4>Credentials</h4><ul><li>Corporate Finance MicroMaster, UTDT — in progress</li><li>CS50x, HarvardX</li><li>Data Analyst, Coderhouse</li><li>Bachelor’s degree in Psychology, UCA</li><li>English C2</li></ul>
-                  <p class="private-note">Personal contact details are withheld. Sagan will coordinate the next step.</p>
-                </div>
-              </div></div>
-            </details>
-          </article>
-        </div>
         </div>
       </div>
     </section>
 
     <section class="comparison">
       <div class="wrap">
-        <p class="eyebrow" style="color:var(--glacier)">Side-by-side view</p>
-        <h2 class="section-title">Comparison</h2>
-        <p class="section-copy"><span id="comparison-batch-label">Showing Batch 1 candidates.</span> Use the tabs above to switch the comparison.</p>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Candidate</th><th>Best evidence</th><th>CRM depth</th><th>Data and reporting</th><th>Commercial context</th><th>Monthly expectation</th></tr></thead>
-            <tbody>
-              <tr data-batch="1"><td>Carol</td><td>Hands-on HubSpot architecture, lifecycle automation, and integrations</td><td>HubSpot, Zoho, Salesforce</td><td>Custom reports, KPI tracking, funnel and pipeline analysis</td><td>Marketing, Sales, CRM operations</td><td>$3,500</td></tr>
-              <tr data-batch="1"><td>Felix</td><td>Recovered a broken finance automation and product-managed a live mobile product from zero</td><td>HubSpot and broader business systems</td><td>Power BI, Tableau, SQL, structured data flows</td><td>Operations, support, recruiting, client delivery</td><td>$3,000</td></tr>
-              <tr data-batch="1"><td>Jaime</td><td>Associate-level HubSpot execution with disciplined campaign QA</td><td>HubSpot Marketing Hub</td><td>HubSpot dashboards, campaign reporting, Excel</td><td>Marketing, Sales, Operations</td><td>$2,500</td></tr>
-              <tr data-batch="1"><td>Elizabeth</td><td>Built AI-assisted WhatsApp-to-HubSpot qualification that lifted MQL conversion by about 5%</td><td>HubSpot with cross-functional ownership</td><td>Power BI, SQL, automated revenue reporting</td><td>Sales, Marketing, Customer Success, Finance</td><td>$3,000</td></tr>
-              <tr data-batch="2" hidden><td>Gabriela</td><td>Revenue analytics, metric design, forecasting, and automated executive reporting</td><td>Salesforce reporting and revenue-data workflows</td><td>SQL, Power BI, Tableau, forecasting</td><td>Sales, Finance, Operations, Partnerships</td><td>$3,000</td></tr>
-              <tr data-batch="2" hidden><td>Santos</td><td>Business-system design across Salesforce, reporting, finance, and AI automation</td><td>Salesforce administration with HubSpot exposure</td><td>Power BI, Looker Studio, Tableau, SQL, Python</td><td>Sales, Finance, Operations, Delivery</td><td>$2,800</td></tr>
-            </tbody>
-          </table>
+        <p class="eyebrow" style="color:var(--glacier)">My read</p>
+        <h2 class="section-title">Why I would meet both</h2>
+        <p class="section-copy">Elizabeth can contribute faster inside the systems. Luis understands the problem from the customer and seller side, then works backward to the system.</p>
+        <div class="table-wrap"><table><thead><tr><th>Candidate</th><th>Status</th><th>Why meet them</th><th>Best interview evidence</th><th>What I would test next</th><th>Monthly expectation</th></tr></thead><tbody>
+          <tr><td>Elizabeth</td><td><span class="table-tag">Previously shared</span></td><td>She can own HubSpot work now and has the judgment to challenge the wrong request.</td><td>Built an AI SDR that improved MQL conversion by about 5%.</td><td>What she would fix first during her first 90 days.</td><td>$3,000</td></tr>
+          <tr><td>Luis Pedro</td><td><span class="table-tag">New</span></td><td>He connects the commercial problem to the system instead of treating every request as a ticket.</td><td>Replaced a standard template with four connected pipelines and one leadership view.</td><td>Give him a real workflow problem and see how he reasons through it with the team.</td><td>$3,000</td></tr>
+        </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="onboarding">
+      <div class="wrap">
+        <p class="eyebrow">How I would onboard them</p>
+        <h2 class="section-title">Give them real work from day one.</h2>
+        <p class="onboarding-copy">Your team gives them access, one problem to own, and someone who can make decisions. I stay close, flag issues early, and review the work at 30, 60, and 90 days.</p>
+
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-head">
+              <span>Elizabeth</span>
+              <h3>Give her context. Then give her room.</h3>
+              <p>She knows HubSpot. Her ramp should focus on the business, the owners, and the problems worth fixing.</p>
+            </div>
+            <div class="plan-phases">
+              <div class="plan-phase">
+                <div class="phase-time">Day 30</div>
+                <div class="phase-body"><h4>Find and fix</h4><p>Map the funnel, rank the problems, and ship one measurable HubSpot improvement.</p><span class="phase-output"><strong>Milestone:</strong> one live fix with a before-and-after measure.</span></div>
+              </div>
+              <div class="plan-phase">
+                <div class="phase-time">Day 60</div>
+                <div class="phase-body"><h4>Own the rules</h4><p>Take responsibility for automation and CRM rules. Keep priorities, owners, and results clear.</p><span class="phase-output"><strong>Milestone:</strong> one owned backlog showing priority, status, and result.</span></div>
+              </div>
+              <div class="plan-phase">
+                <div class="phase-time">Day 90</div>
+                <div class="phase-body"><h4>Set the direction</h4><p>Present the next six months: what happens now, what waits, and who owns each decision.</p><span class="phase-output"><strong>Milestone:</strong> a six-month plan the team can use.</span></div>
+              </div>
+            </div>
+            <p class="plan-test"><strong>The point</strong>She starts producing in month one. The plan tests her leadership, not her ability to use HubSpot.</p>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-head">
+              <span>Luis Pedro</span>
+              <h3>Teach the stack through real work.</h3>
+              <p>Give him a problem the team needs solved. He learns the system while he owns the outcome.</p>
+            </div>
+            <div class="plan-phases">
+              <div class="plan-phase">
+                <div class="phase-time">Day 30</div>
+                <div class="phase-body"><h4>Build and launch</h4><p>Learn the data and workflows by owning one real build, from problem to documented handoff.</p><span class="phase-output"><strong>Milestone:</strong> one working build and a handoff another person can follow.</span></div>
+              </div>
+              <div class="plan-phase">
+                <div class="phase-time">Day 60</div>
+                <div class="phase-body"><h4>Lead the problem</h4><p>Take one issue across teams. Bring two options, recommend one, and deliver the change.</p><span class="phase-output"><strong>Milestone:</strong> one documented decision and a change the team uses.</span></div>
+              </div>
+              <div class="plan-phase">
+                <div class="phase-time">Day 90</div>
+                <div class="phase-body"><h4>Own one area</h4><p>Set priorities and explain the trade-offs. Bring a recommendation for the next quarter instead of waiting for another list of tickets.</p><span class="phase-output"><strong>Milestone:</strong> a next-quarter plan he can own.</span></div>
+              </div>
+            </div>
+            <p class="plan-test"><strong>The point</strong>His judgment starts producing in month one. The system knowledge grows through ownership, not classroom training.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <div style="text-align:center">
-          <p class="eyebrow" style="color:var(--glacier)">Your Sagan contact</p>
-          <h2 class="section-title">Ready for the next conversation.</h2>
-        </div>
-        <div class="advisor-card">
-          <img src="jesus-pacheco.jpg" alt="Jesus Pacheco">
-          <div><p style="font:600 11px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.08em">Submitted by</p><h3>Jesus Pacheco</h3><p>Head of Revenue at Sagan. Jesus will coordinate interviews, confirm availability, and help Osmind move quickly on the right profile.</p></div>
-        </div>
+        <div style="text-align:center"><p class="eyebrow" style="color:var(--glacier)">Your Talent Advisor</p><h2 class="section-title">These are the two I would move forward.</h2></div>
+        <div class="advisor-card"><img src="jesus-pacheco.jpg" alt="Jesus Pacheco"><div><p style="font:600 11px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.08em">Submitted by</p><h3>Jesus Pacheco</h3><p>Head of Revenue at Sagan. I screened both candidates and included the calls so you can judge the same evidence I used.</p></div></div>
       </div>
     </section>
   </main>
 
   <footer>Prepared by Sagan for Osmind · Candidate information is confidential and intended only for hiring evaluation.</footer>
-  <script>
-    const batchTabs = Array.from(document.querySelectorAll('.batch-tab'));
-    const batchPanels = Array.from(document.querySelectorAll('.batch-panel'));
-    const comparisonRows = Array.from(document.querySelectorAll('tbody tr[data-batch]'));
-    const comparisonLabel = document.getElementById('comparison-batch-label');
-
-    function showBatch(batch, moveFocus = false) {
-      batchTabs.forEach((tab) => {
-        const isSelected = tab.dataset.batch === batch;
-        tab.setAttribute('aria-selected', String(isSelected));
-        tab.tabIndex = isSelected ? 0 : -1;
-        if (isSelected && moveFocus) tab.focus();
-      });
-
-      batchPanels.forEach((panel) => {
-        panel.hidden = panel.id !== `batch-panel-${batch}`;
-      });
-
-      comparisonRows.forEach((row) => {
-        row.hidden = row.dataset.batch !== batch;
-      });
-
-      comparisonLabel.textContent = `Showing Batch ${batch} candidates.`;
-    }
-
-    batchTabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => showBatch(tab.dataset.batch));
-      tab.addEventListener('keydown', (event) => {
-        let nextIndex = index;
-        if (event.key === 'ArrowRight') nextIndex = (index + 1) % batchTabs.length;
-        else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + batchTabs.length) % batchTabs.length;
-        else if (event.key === 'Home') nextIndex = 0;
-        else if (event.key === 'End') nextIndex = batchTabs.length - 1;
-        else return;
-
-        event.preventDefault();
-        showBatch(batchTabs[nextIndex].dataset.batch, true);
-      });
-    });
-  </script>
 </body>
 </html>
